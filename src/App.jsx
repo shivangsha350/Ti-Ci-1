@@ -7,6 +7,7 @@ import Hero from './components/Hero'
 import Masterpieces from './components/MasterPieces'
 import ServiceSection from './components/ServiceSection'
 import Commitment from './components/Commitment'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
      <Masterpieces/>
      <ServiceSection/>
      <Commitment/>
+     <Footer/>
     </>
   )
 }

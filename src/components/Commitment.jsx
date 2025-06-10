@@ -1,4 +1,3 @@
-// Commitment.jsx
 import React from 'react';
 import { FaLeaf } from 'react-icons/fa';
 

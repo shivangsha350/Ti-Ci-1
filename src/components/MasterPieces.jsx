@@ -36,7 +36,7 @@ const Masterpieces = () => {
                         <span className="font-normal text-[#A4B0A0]">Masterpieces</span>
                     </h1>
                     <p className="text-lg md:text-xl leading-relaxed text-[#CBD5C0]">
-                        At Gardyn, we’re passionate about turning your garden into a true
+                        At Tici, we’re passionate about turning your garden into a true
                         reflection of your personal style and a haven for relaxation and
                         enjoyment. Whether you’re dreaming of a vibrant floral display, a
                         serene outdoor retreat, or a stunning landscape transformation.
