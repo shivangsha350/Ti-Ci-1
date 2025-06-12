@@ -10,6 +10,7 @@ import ServiceSection from './components/ServiceSection'
 import Commitment from './components/Commitment'
 import Footer from './components/Footer'
 import Projects from './components/Projects/Projects'
+import ContactSection from './components/Contact/ContactSection'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         }
         />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/contact' element={<ContactSection />} />
       </Routes>
       <Footer />
     </Router>
