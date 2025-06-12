@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -8,20 +9,29 @@ import Masterpieces from './components/MasterPieces'
 import ServiceSection from './components/ServiceSection'
 import Commitment from './components/Commitment'
 import Footer from './components/Footer'
+import Projects from './components/Projects/Projects'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-    <Navbar/>
-     <Hero/>
-     <Masterpieces/>
-     <ServiceSection/>
-     <Commitment/>
-     <Footer/>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={
+          <>
+            <Hero />
+            <Masterpieces />
+            <ServiceSection />
+            <Commitment />
+          </>
+        }
+        />
+        <Route path='/projects' element={<Projects />} />
+      </Routes>
+      <Footer />
+    </Router>
   )
 }
 
