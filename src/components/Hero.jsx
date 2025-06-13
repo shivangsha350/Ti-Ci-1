@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 const images = [
-  '/nature.jpeg',
-  '/nature1.jpeg',
-  '/nature2.jpeg' 
+  '/Hero.webp',
+  '/Hero2.webp',
+  '/Hero3.webp' 
 ];
 
 const Hero = () => {
