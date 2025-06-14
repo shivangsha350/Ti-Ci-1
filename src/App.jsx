@@ -11,6 +11,8 @@ import Commitment from './components/Commitment'
 import Footer from './components/Footer'
 import Projects from './components/Projects/Projects'
 import ContactSection from './components/Contact/ContactSection'
+import Services from './components/Services/Services'
+import TestimonialsSection from './components/TestimonialsSection'
 
 
 function App() {
@@ -26,11 +28,13 @@ function App() {
             <Masterpieces />
             <ServiceSection />
             <Commitment />
+            <TestimonialsSection/>
           </>
         }
         />
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<ContactSection />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
       <Footer />
     </Router>
