@@ -12,9 +12,13 @@ import Footer from './components/Footer'
 import Projects from './components/Projects/Projects'
 import ContactSection from './components/Contact/ContactSection'
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import Services from './components/Services/Services'
 import TestimonialsSection from './components/TestimonialsSection'
 
+=======
+import LatestWorks from './components/LatestWorks'
+>>>>>>> Stashed changes
 =======
 import LatestWorks from './components/LatestWorks'
 >>>>>>> Stashed changes
@@ -33,7 +37,11 @@ function App() {
             <ServiceSection />
             <Commitment />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <TestimonialsSection/>
+=======
+            <LatestWorks />
+>>>>>>> Stashed changes
 =======
             <LatestWorks />
 >>>>>>> Stashed changes
