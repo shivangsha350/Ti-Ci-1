@@ -11,9 +11,13 @@ import Commitment from './components/Commitment'
 import Footer from './components/Footer'
 import Projects from './components/Projects/Projects'
 import ContactSection from './components/Contact/ContactSection'
+<<<<<<< Updated upstream
 import Services from './components/Services/Services'
 import TestimonialsSection from './components/TestimonialsSection'
 
+=======
+import LatestWorks from './components/LatestWorks'
+>>>>>>> Stashed changes
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,7 +32,11 @@ function App() {
             <Masterpieces />
             <ServiceSection />
             <Commitment />
+<<<<<<< Updated upstream
             <TestimonialsSection/>
+=======
+            <LatestWorks />
+>>>>>>> Stashed changes
           </>
         }
         />
