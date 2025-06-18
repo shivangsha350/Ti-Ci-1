@@ -15,7 +15,7 @@ const Consultation = () => {
 
         <div className="relative z-10 text-white max-w-2xl space-y-6">
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight drop-shadow-lg">
-            Transform Your Garden – Contact Us for a Free Consultation
+            Partner With Us for Your Next Green Project
           </h1>
 
           <button className="bg-[#3B6029] hover:bg-[#2E4E1E] text-white px-6 py-3 rounded-full font-semibold transition-colors">

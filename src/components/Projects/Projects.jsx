@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import Consultation from './Consultation';
+import { Link } from 'react-router-dom';
 
 const project = [
   {
@@ -47,11 +48,11 @@ const Projects = () => {
             Projects
           </h1>
           <p className="text-xl sm:text-2xl leading-relaxed drop-shadow">
-            Transform Your Garden into a Personal Paradise!
+            Featured Projects Across India
           </p>
-          <button className="bg-[#3B6029] hover:bg-[#2E4E1E] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:scale-105">
+          <Link to = "/services"className="bg-[#3B6029] hover:bg-[#2E4E1E] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:scale-105">
             OUR SERVICES
-          </button>
+          </Link>
         </div>
       </section>
 

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const Masterpieces = () => {
+const WelcomeTici = () => {
     return (
         <section className="bg-[#374C37] min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
             <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-12">
@@ -45,30 +45,25 @@ const Masterpieces = () => {
                     >
                         Welcome to Tici
                     </motion.span>
+                    <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+                        Pioneering Tissue Culture & Aquascaping in India <br />
 
-                    <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                        Crafting Living <br />
-                        <span className="font-normal text-[#A4B0A0]">Masterpieces</span>
                     </h1>
-
                     <p className="text-lg md:text-xl leading-relaxed text-[#CBD5C0]">
-                        At Tici, we’re passionate about turning your garden into a true
-                        reflection of your personal style and a haven for relaxation and
-                        enjoyment. Whether you’re dreaming of a vibrant floral display,
-                        a serene outdoor retreat, or a stunning landscape transformation.
+                        At TiCi, we blend science and nature to redefine how people engage with plants, aquascapes, and sustainable ecosystems. Established in 2012 (originally as Aquasphere), TiCi has evolved into a cutting-edge organization specializing in tissue culture, aquascaping, terrariums, hydroponics, aquaponics, and urban rainforest designs. With a unique fusion of biotechnology and artistic vision, we offer innovative solutions for hobbyists, greenpreneurs, and urban spaces.
                     </p>
 
-                    <motion.button
+                    {/* <motion.button
                         className="bg-[#526650] hover:bg-[#678065] transition px-6 py-3 rounded-full text-white text-sm font-semibold shadow-lg flex items-center gap-2"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
                         OUR SERVICES <ArrowRight size={18} />
-                    </motion.button>
+                    </motion.button> */}
                 </motion.div>
             </div>
         </section>
     );
 };
 
-export default Masterpieces;
+export default WelcomeTici;

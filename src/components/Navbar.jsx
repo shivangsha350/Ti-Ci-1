@@ -43,9 +43,7 @@ const Navbar = () => {
             <Link to="/" className="block hover:text-[#E87722] text-base font-medium">HOME</Link>
             <Link to="/services" className="block hover:text-[#E87722] text-base font-medium">SERVICES</Link>
             <Link to="/projects" className="block hover:text-[#E87722] text-base font-medium">PROJECTS</Link>
-            <Link to="/pages" className="block hover:text-[#E87722] text-base font-medium">PAGES</Link>
-            <Link to="/shop" className="block hover:text-[#E87722] text-base font-medium">SHOP</Link>
-            <Link to="/blog" className="block hover:text-[#E87722] text-base font-medium">BLOG</Link>
+            <Link to="/aboutus" className="block hover:text-[#E87722] text-base font-medium">ABOUT US</Link>
             <Link to="/contact" className="block hover:text-[#E87722] text-base font-medium">CONTACT</Link>
 
           </ul>
@@ -72,9 +70,7 @@ const Navbar = () => {
             <Link to="/" className="block hover:text-[#E87722] text-base font-medium">HOME</Link>
             <Link to="/services" className="block hover:text-[#E87722] text-base font-medium">SERVICES</Link>
             <Link to="/projects" className="block hover:text-[#E87722] text-base font-medium">PROJECTS</Link>
-            <Link to="/pages" className="block hover:text-[#E87722] text-base font-medium">PAGES</Link>
-            <Link to="/shop" className="block hover:text-[#E87722] text-base font-medium">SHOP</Link>
-            <Link to="/blog" className="block hover:text-[#E87722] text-base font-medium">BLOG</Link>
+            <Link to="/aboutus" className="block hover:text-[#E87722] text-base font-medium">ABOUT US</Link>
             <Link to="/contact" className="block hover:text-[#E87722] text-base font-medium">CONTACT</Link>
             <button className="w-full mt-4 border px-4 py-2 rounded-full bg-[#E87722] hover:bg-white hover:text-[#3B6029] transition font-semibold">
               GET IN TOUCH

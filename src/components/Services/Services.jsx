@@ -2,46 +2,40 @@ import React from "react";
 import { FaLeaf } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+
 const services = [
   {
-    title: "Garden Design",
+    title: "Tissue Culture & Plant Biotechnology",
     description:
-      "Imagine stepping into your own private oasis—a garden designed perfectly to your needs and style.",
+      "Our state-of-the-art labs specialize in the micropropagation of exotic plants, helping nurseries, greenhouses, and decor companies access high-quality planting material at scale.",
     image: "/garden.jpeg",
     readMore: true,
   },
   {
-    title: "Garden Maintenance",
+    title: "Aquascaping & Aquatic Habitat Design",
     description:
-      "A beautiful garden is more than just a space—it’s a living, breathing part of your home. But maintaining that beauty takes time and expertise.",
+      "TiCi brings artistry to aquariums through bespoke aquascapes and sustainable aquatic habitats, blending beauty with eco-balance.",
     image: "/maintainance.jpeg",
     readMore: true,
   },
   {
-    title: "Decking and Patio",
+    title: "Hydroponics, Aquaponics & Urban Farming",
     description:
-      "Create an inviting space for entertaining, or a functional extension of your home’s interior.",
+      "We design space-efficient, low-maintenance systems that deliver high yields using minimal resources for homes, schools, and commercial setups.",
     image: "/decking.jpeg",
     readMore: true,
   },
   {
-    title: "Decking and Patio",
+    title: "Terrariums & Indoor Rainforests",
     description:
-      "Create an inviting space for entertaining, or a functional extension of your home’s interior.",
+      "From miniature glass ecosystems to immersive installations, we bring nature indoors with moss walls, indoor waterfalls, and rainforest scapes.",
     image: "/decking.jpeg",
     readMore: true,
   },
   {
-    title: "Decking and Patio",
+    title: "Training & Mentorship",
     description:
-      "Create an inviting space for entertaining, or a functional extension of your home’s interior.",
-    image: "/decking.jpeg",
-    readMore: true,
-  },
-  {
-    title: "Decking and Patio",
-    description:
-      "Create an inviting space for entertaining, or a functional extension of your home’s interior.",
+      "Our practical, job-ready training programs nurture future tissue culture specialists, aquascaping artists, and ecosystem project managers.",
     image: "/decking.jpeg",
     readMore: true,
   },
