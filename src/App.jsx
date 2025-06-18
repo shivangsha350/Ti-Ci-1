@@ -9,6 +9,11 @@ import Projects from './components/Projects/Projects'
 import ContactSection from './components/Contact/ContactSection'
 import Services from './components/Services/Services'
 import TestimonialsSection from './components/TestimonialsSection'
+
+// import LatestWorks from './components/LatestWorks'
+
+
+
 import LatestWorks from './components/LatestWorks'
 import AboutUs from './components/AboutUs'
 import WelcomeTici from './components/WelcomeTici'
