@@ -38,7 +38,7 @@ const cardData = [
 
 const LatestWorks = () => {
   return (
-    <div className="bg-green-900 min-h-screen px-6 py-16 text-white">
+    <div className="bg-[#2E442F] min-h-screen px-6 py-16 text-white">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
         LATEST <span className="font-light">WORKS</span>
       </h2>
