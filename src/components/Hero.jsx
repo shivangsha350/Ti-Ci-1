@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const images = [
   '/Hero.webp',
-  '/Hero2.webp',
+  '/bg.webp',
   '/Hero3.webp' 
 ];
 
