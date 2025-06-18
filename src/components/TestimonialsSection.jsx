@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
             key={index}
             className="text-white flex flex-col justify-between h-full"
           >
-            <div className="text-4xl mb-4">“</div>
+            <div className="text-4xl mb-0">“</div>
             <p className="text-lg leading-relaxed mb-6">{testimonial.text}</p>
 
             <div className="flex items-center space-x-1 mb-4">

@@ -7,21 +7,29 @@ const project = [
     name: 'Serenity Grove',
     location: 'North Carolina',
     image: '/projects/1.jpeg',
+    description:
+      "A beautiful garden is more than just a space—it's a living, breathing part of your home. But maintaining that beauty takes time and expertise.",
   },
   {
     name: 'Nature’s Palette',
     location: 'California',
     image: '/projects/2.jpg',
+    description:
+      "A beautiful garden is more than just a space—it's a living, breathing part of your home. But maintaining that beauty takes time and expertise.",
   },
   {
     name: 'Eco Retreat',
     location: 'Texas',
     image: '/projects/3.webp',
+    description:
+      "A beautiful garden is more than just a space—it's a living, breathing part of your home. But maintaining that beauty takes time and expertise.",
   },
   {
     name: 'Botanic Bliss',
     location: 'Oregon',
     image: '/projects/4.jpg',
+    description:
+      "A beautiful garden is more than just a space—it's a living, breathing part of your home. But maintaining that beauty takes time and expertise.",
   },
 ];
 
@@ -34,48 +42,62 @@ const Projects = () => {
         style={{ backgroundImage: `url('/projects/2.jpg')` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20 z-0"></div>
-
         <div className="relative z-10 text-white max-w-2xl space-y-6">
           <h1 className="text-4xl sm:text-6xl font-bold leading-tight drop-shadow-lg">
             Projects
           </h1>
           <p className="text-xl sm:text-2xl leading-relaxed drop-shadow">
-           Transform Your Garden into a Personal Paradise!
+            Transform Your Garden into a Personal Paradise!
           </p>
-          <button className="bg-[#3B6029] hover:bg-[#2E4E1E] text-white px-6 py-3 rounded-full font-semibold transition-colors">
+          <button className="bg-[#3B6029] hover:bg-[#2E4E1E] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:scale-105">
             OUR SERVICES
           </button>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section className="bg-[#2E442F] py-16 px-4 md:px-20">
-        <div className="grid md:grid-cols-2 gap-6">
-          {project.map(({ name, location, image }, idx) => (
-            <div key={idx} className="relative overflow-hidden rounded-xl shadow-lg">
+      <section className="bg-[#2E442F] py-20 px-4 md:px-20">
+        <h2 className="text-white text-4xl md:text-5xl font-bold mb-12 text-center">
+          Our Projects
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-10">
+          {project.map(({ name, location, image, description }, idx) => (
+            <div
+              key={idx}
+              className="relative overflow-hidden rounded-xl shadow-xl group h-80 transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"
+            >
+              {/* Project Image */}
               <img
                 src={image}
                 alt={name}
-                className="w-full h-64 object-cover"
+                className="w-full h-full object-cover transition duration-500 group-hover:blur-[2px] scale-100 group-hover:scale-105"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-[#3d5a3d]/80 backdrop-blur-md text-white px-6 py-4 flex justify-between items-center">
+
+              {/* Bottom Info */}
+              <div className="absolute bottom-0 left-0 right-0 bg-[#3d5a3d]/80 backdrop-blur-md text-white px-6 py-4 flex justify-between items-center z-10 rounded-b-xl">
                 <div>
-                  <p className="text-sm">Name</p>
+                  <p className="text-xs uppercase tracking-wider opacity-70">Name</p>
                   <p className="font-bold text-lg">{name}</p>
                 </div>
                 <div>
-                  <p className="text-sm">Location</p>
+                  <p className="text-xs uppercase tracking-wider opacity-70">Location</p>
                   <p className="font-bold text-lg">{location}</p>
                 </div>
-                <FaArrowRight className="text-xl ml-4" />
+                <FaArrowRight className="text-xl ml-4 group-hover:rotate-45 transition-transform duration-300" />
+              </div>
+
+              {/* Hover Overlay */}
+              <div className="absolute inset-0 bg-[#2E442F] p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white flex items-center justify-center text-sm leading-relaxed text-center z-20 rounded-xl">
+                <p className="max-w-md">{description}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Consultation section */}
-      <Consultation/>
+      {/* Consultation Section */}
+      <Consultation />
     </div>
   );
 };

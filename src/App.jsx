@@ -16,6 +16,11 @@ import TestimonialsSection from './components/TestimonialsSection'
 import LatestWorks from './components/LatestWorks'
 
 
+import LatestWorks from './components/LatestWorks'
+
+
+
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -29,8 +34,13 @@ function App() {
             <Masterpieces />
             <ServiceSection />
             <Commitment />
+
             <TestimonialsSection/>
+
             <LatestWorks />
+
+            {/* <LatestWorks /> */}
+
           </>
         }
         />
