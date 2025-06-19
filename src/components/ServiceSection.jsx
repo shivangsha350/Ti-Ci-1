@@ -147,8 +147,142 @@
 
 
 
+// import React from "react";
+// import { FaLeaf } from "react-icons/fa";
+
+// const services = [
+//   {
+//     title: "Garden Design",
+//     description:
+//       "Imagine stepping into your own private oasis—a garden designed just for you, where every plant, path, and stone tells your story.",
+//     image: "/garden.jpeg",
+//   },
+//   {
+//     title: "Garden Maintenance",
+//     description:
+//       "Imagine stepping into your own private oasis—a garden designed just for you, where every plant, path, and stone tells your story.",
+//     image: "/maintainance.jpeg",
+//   },
+//   {
+//     title: "Decking and Patio",
+//     description:
+//       "Imagine stepping into your own private oasis—a garden designed just for you, where every plant, path, and stone tells your story.",
+//     image: "/decking.jpeg",
+//   },
+//   {
+//     title: "Plant Selection",
+//     description:
+//       "Imagine stepping into your own private oasis—a garden designed just for you, where every plant, path, and stone tells your story.",
+//     image: "/decking.jpeg",
+//   },
+// ];
+
+// const ServiceCard = ({ title, description, image }) => {
+//   return (
+//     <div className="group relative bg-[#2E442F] rounded-xl overflow-hidden shadow-md transition-all duration-300">
+//       {/* Image Layer */}
+//       <div
+//         className="h-72 bg-cover bg-center transition-opacity duration-300 group-hover:opacity-0"
+//         style={{ backgroundImage: `url(${image})` }}
+//       />
+
+//       {/* Overlay Content on Hover */}
+//       <div className="absolute top-0 left-0 w-full h-72 bg-[#2E442F] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+//         {/* <button className="bg-[#90A48B] text-[#2E442F] font-semibold px-6 py-2 rounded-full shadow hover:bg-white hover:text-[#1d3122] hover:cursor-pointer transition-all duration-300">
+//           VIEW DETAILS
+//         </button> */}
+
+//         <button className="cursor-pointer bg-[#90A48B] text-[#2E442F] font-semibold px-6 py-2 rounded-full shadow transition-all duration-300 hover:bg-[#A6BBA3]">
+//   VIEW DETAILS
+// </button>
+
+//       </div>
+
+
+      
+
+//       {/* Icon + Title (only show before hover) */}
+//       <div className="absolute top-0 left-0 w-full h-72 flex flex-col items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-0">
+//         <FaLeaf className="text-4xl mb-2" />
+//         <h3 className="text-lg font-semibold">{title}</h3>
+//       </div>
+
+//       {/* Description (Always Visible) */}
+//       <div className="px-6 py-5 text-white text-sm leading-relaxed">
+//         {description}
+//       </div>
+//     </div>
+//   );
+// };
+
+// const ServicesSection = () => {
+//   return (
+//     <section className="bg-[#EEF3EC] py-16 px-6">
+//       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+//         {services.map((service, idx) => (
+//           <ServiceCard key={idx} {...service} />
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default ServicesSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React from "react";
 import { FaLeaf } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -160,69 +294,92 @@ const services = [
   {
     title: "Garden Maintenance",
     description:
-      "Imagine stepping into your own private oasis—a garden designed just for you, where every plant, path, and stone tells your story.",
+      "Our experts ensure your garden remains lush and vibrant with tailored upkeep for every season.",
     image: "/maintainance.jpeg",
   },
   {
     title: "Decking and Patio",
     description:
-      "Imagine stepping into your own private oasis—a garden designed just for you, where every plant, path, and stone tells your story.",
+      "Extend your living space outdoors with elegant, durable decking and patios crafted to suit your lifestyle.",
     image: "/decking.jpeg",
   },
   {
     title: "Plant Selection",
     description:
-      "Imagine stepping into your own private oasis—a garden designed just for you, where every plant, path, and stone tells your story.",
+      "Curated plant varieties chosen for your space, climate, and aesthetics to ensure a thriving garden.",
     image: "/decking.jpeg",
   },
 ];
 
+// Animation variants
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+
 const ServiceCard = ({ title, description, image }) => {
   return (
-    <div className="group relative bg-[#2E442F] rounded-xl overflow-hidden shadow-md transition-all duration-300">
-      {/* Image Layer */}
+    <motion.div
+      variants={cardVariants}
+      className="group relative bg-[#2E442F] rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.02]"
+    >
+      {/* Image */}
       <div
-        className="h-72 bg-cover bg-center transition-opacity duration-300 group-hover:opacity-0"
+        className="h-72 bg-cover bg-center transition-opacity duration-500 group-hover:opacity-0"
         style={{ backgroundImage: `url(${image})` }}
       />
 
-      {/* Overlay Content on Hover */}
-      <div className="absolute top-0 left-0 w-full h-72 bg-[#2E442F] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-        {/* <button className="bg-[#90A48B] text-[#2E442F] font-semibold px-6 py-2 rounded-full shadow hover:bg-white hover:text-[#1d3122] hover:cursor-pointer transition-all duration-300">
+      {/* Hover Overlay */}
+      <div className="absolute top-0 left-0 w-full h-72 bg-[#2E442F]/95 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+        <button className="cursor-pointer bg-[#90A48B] text-[#2E442F] font-semibold px-6 py-2 rounded-full shadow-md hover:bg-[#A6BBA3] transition-all duration-300">
           VIEW DETAILS
-        </button> */}
-
-        <button className="cursor-pointer bg-[#90A48B] text-[#2E442F] font-semibold px-6 py-2 rounded-full shadow transition-all duration-300 hover:bg-[#A6BBA3]">
-  VIEW DETAILS
-</button>
-
+        </button>
       </div>
 
-
-      
-
-      {/* Icon + Title (only show before hover) */}
+      {/* Title + Icon */}
       <div className="absolute top-0 left-0 w-full h-72 flex flex-col items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-0">
-        <FaLeaf className="text-4xl mb-2" />
+        <FaLeaf className="text-4xl mb-2 animate-pulse" />
         <h3 className="text-lg font-semibold">{title}</h3>
       </div>
 
-      {/* Description (Always Visible) */}
+      {/* Description */}
       <div className="px-6 py-5 text-white text-sm leading-relaxed">
         {description}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 const ServicesSection = () => {
   return (
     <section className="bg-[#EEF3EC] py-16 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <motion.div
+        className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         {services.map((service, idx) => (
           <ServiceCard key={idx} {...service} />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

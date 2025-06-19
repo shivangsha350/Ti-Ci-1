@@ -128,6 +128,124 @@
 
 
 
+// import React, { useState } from "react";
+// import { FaQuoteLeft } from "react-icons/fa";
+// import { motion, AnimatePresence } from "framer-motion";
+
+// const testimonials = [
+//   {
+//     quote:
+//       "We hired Gardyn to transform our backyard, and the results were beyond our expectations. The team was professional, punctual, and incredibly knowledgeable about plants and landscaping.",
+//     author: "Donette Fondren",
+//   },
+//   {
+//     quote:
+//       "TiCi completely changed the way we think about green interiors. Their terrarium and moss wall designs brought life into our office space.",
+//     author: "Rahul Mehta",
+//   },
+//   {
+//     quote:
+//       "The hydroponics system they installed at our school is both educational and beautiful. It’s a sustainable learning tool we didn’t know we needed.",
+//     author: "Sonal Kapoor",
+//   },
+// ];
+
+// const TestimonialSection = () => {
+//   const [index, setIndex] = useState(0);
+
+//   const handleDotClick = (i) => {
+//     setIndex(i);
+//   };
+
+//   return (
+//     <section
+//       className="relative w-full py-24 px-6 bg-[#EEF3EC] bg-center bg-cover text-center"
+//       style={{
+//         backgroundImage: "url('/pattern-bg.png')", // Replace with your actual background path
+//       }}
+//     >
+//       <div className="max-w-5xl mx-auto">
+//         <FaQuoteLeft className="text-4xl mx-auto text-[#3D5734] mb-6" />
+
+//         <AnimatePresence mode="wait">
+//           <motion.div
+//             key={index}
+//             initial={{ opacity: 0, y: 20 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             exit={{ opacity: 0, y: -20 }}
+//             transition={{ duration: 0.4 }}
+//           >
+//             <p className="text-2xl md:text-3xl font-medium text-[#2E442F] leading-relaxed mb-6">
+//               {testimonials[index].quote}
+//             </p>
+//             <p className="text-gray-600 font-medium">{testimonials[index].author}</p>
+//           </motion.div>
+//         </AnimatePresence>
+
+//         {/* Dots */}
+//         <div className="mt-8 flex justify-center space-x-3">
+//           {testimonials.map((_, i) => (
+//             <button
+//               key={i}
+//               onClick={() => handleDotClick(i)}
+//               className={`w-3 h-3 rounded-full transition-all duration-300 ${
+//                 index === i ? "bg-[#3D5734]" : "bg-[#A0B49A] opacity-40"
+//               }`}
+//             />
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default TestimonialSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
@@ -150,6 +268,13 @@ const testimonials = [
   },
 ];
 
+// Animation variants
+const fadeSlide = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -20 },
+};
+
 const TestimonialSection = () => {
   const [index, setIndex] = useState(0);
 
@@ -161,19 +286,26 @@ const TestimonialSection = () => {
     <section
       className="relative w-full py-24 px-6 bg-[#EEF3EC] bg-center bg-cover text-center"
       style={{
-        backgroundImage: "url('/pattern-bg.png')", // Replace with your actual background path
+        backgroundImage: "url('/pattern-bg.png')",
       }}
     >
       <div className="max-w-5xl mx-auto">
-        <FaQuoteLeft className="text-4xl mx-auto text-[#3D5734] mb-6" />
+        <motion.div
+          initial={{ scale: 0.5, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <FaQuoteLeft className="text-4xl mx-auto text-[#3D5734] mb-6" />
+        </motion.div>
 
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.4 }}
+            variants={fadeSlide}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             <p className="text-2xl md:text-3xl font-medium text-[#2E442F] leading-relaxed mb-6">
               {testimonials[index].quote}
@@ -182,14 +314,18 @@ const TestimonialSection = () => {
           </motion.div>
         </AnimatePresence>
 
-        {/* Dots */}
-        <div className="mt-8 flex justify-center space-x-3">
+        {/* Dots Navigation */}
+        <div className="mt-8 flex justify-center space-x-4">
           {testimonials.map((_, i) => (
-            <button
+            <motion.button
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
               key={i}
               onClick={() => handleDotClick(i)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === i ? "bg-[#3D5734]" : "bg-[#A0B49A] opacity-40"
+                index === i
+                  ? "bg-[#3D5734] scale-110"
+                  : "bg-[#A0B49A] opacity-50"
               }`}
             />
           ))}
