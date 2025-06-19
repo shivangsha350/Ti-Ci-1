@@ -9,7 +9,7 @@ const cardData = [
     image:
       "https://media.istockphoto.com/id/1414023501/photo/beautiful-ornamental-garden.jpg?b=1&s=612x612&w=0&k=20&c=o-6cTBDYGcWdQdAysGNUA14pJJKJjHCUTg8FY6fFK70=",
     description:
-      "A beautiful garden is more than just a space—it's a living, breathing part of your home. But maintaining that beauty takes time and expertise.",
+      "A beautiful garden is more than a space—it's a living, breathing part of your home. But maintaining that beauty takes time and expertise.",
   },
   {
     id: 2,
