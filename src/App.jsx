@@ -17,6 +17,7 @@ import TestimonialsSection from './components/TestimonialsSection'
 import LatestWorks from './components/LatestWorks'
 import AboutUs from './components/AboutUs'
 import WelcomeTici from './components/WelcomeTici'
+import Crafting from './components/Crafting'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <>
             <Hero />
             <WelcomeTici/>
+            <Crafting/>
             <ServiceSection />
             <AboutUs />
             <TestimonialsSection/>
