@@ -5,6 +5,7 @@ import { FaStar, FaLeaf, FaSmile, FaSeedling } from "react-icons/fa";
 import { SiTrustpilot } from "react-icons/si";
 import { FcGoogle } from "react-icons/fc";
 import { motion } from "framer-motion";
+import CommitmentSection from './CommitmentSection';
 const fadeUp = {
   initial: { opacity: 0, y: 40 },
   whileInView: { opacity: 1, y: 0 },
@@ -141,6 +142,7 @@ const AboutUs = () => {
       </div>
     </section>
         <OurTeam/>
+        <CommitmentSection/>
     </div>
   )
 }
