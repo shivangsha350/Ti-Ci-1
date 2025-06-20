@@ -173,7 +173,7 @@ const features = [
   },
 ];
 
-const AboutUs = () => {
+const AboutUsSection = () => {
   return (
     <section className="bg-[#2E442F] text-white py-20 px-6 md:px-20 overflow-hidden">
       {/* Header Section */}
@@ -224,4 +224,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsSection;

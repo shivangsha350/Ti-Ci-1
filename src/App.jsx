@@ -9,15 +9,17 @@ import Projects from './components/Projects/Projects'
 import ContactSection from './components/Contact/ContactSection'
 import Services from './components/Services/Services'
 import TestimonialsSection from './components/TestimonialsSection'
+import AboutUsPage from './components/AboutUs/AboutUs'
 
 // import LatestWorks from './components/LatestWorks'
 
 
 
 import LatestWorks from './components/LatestWorks'
-import AboutUs from './components/AboutUs'
+
 import WelcomeTici from './components/WelcomeTici'
 import Crafting from './components/Crafting'
+import AboutUsSection from './components/AboutUsSection'
 
 
 function App() {
@@ -32,7 +34,7 @@ function App() {
             <WelcomeTici/>
             <Crafting/>
             <ServiceSection />
-            <AboutUs />
+            <AboutUsSection />
             <TestimonialsSection/>
             <LatestWorks />
 
@@ -42,6 +44,7 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<ContactSection />} />
         <Route path='/services' element={<Services />} />
+        <Route path='/aboutus' element={<AboutUsPage/>} />
       </Routes>
       <Footer />
     </Router>
