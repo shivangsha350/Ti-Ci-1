@@ -28,7 +28,7 @@ const Hero = () => {
       {/* Left Text */}
       <div className="relative z-10 text-white max-w-xl space-y-4">
         <h1 className="text-4xl sm:text-6xl font-bold leading-tight">
-          About Tici
+          Tici
         </h1>
         <p className='text-2xl'>
           Specializing in nature aquariums, vertical gardens, and hydroponics for stunning indoor and outdoor projects.
