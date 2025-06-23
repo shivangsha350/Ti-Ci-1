@@ -335,6 +335,7 @@ const cardVariants = {
 
 const ServiceCard = ({ title, description, image }) => {
   return (
+    <>
     <motion.div
       variants={cardVariants}
       className="group relative bg-[#2E442F] rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.02]"
@@ -363,6 +364,7 @@ const ServiceCard = ({ title, description, image }) => {
         {description}
       </div>
     </motion.div>
+    </>
   );
 };
 

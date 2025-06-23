@@ -20,6 +20,8 @@ import LatestWorks from './components/LatestWorks'
 import WelcomeTici from './components/WelcomeTici'
 import Crafting from './components/Crafting'
 import AboutUsSection from './components/AboutUsSection'
+import CommitmentSection from './components/AboutUs/CommitmentSection'
+import ScrollingSection from './components/ScrollingSection'
 
 
 function App() {
@@ -32,9 +34,12 @@ function App() {
           <>
             <Hero />
             <WelcomeTici/>
-            <Crafting/>
+            <ScrollingSection/>
             <ServiceSection />
-            <AboutUsSection />
+            <Crafting/>
+            <CommitmentSection/>
+            
+            {/* <AboutUsSection /> */}
             <TestimonialsSection/>
             <LatestWorks />
 
