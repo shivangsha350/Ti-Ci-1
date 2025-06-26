@@ -88,6 +88,7 @@
 
 
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const images = ["/Hero.webp", "/bg.webp", "/Hero3.webp"];
 
@@ -115,15 +116,15 @@ const Hero = () => {
           Welcome to TiCi
         </h1>
         <p className="text-base md:text-lg max-w-xl opacity-90">
-           Specializing in nature aquariums, vertical gardens, and hydroponics for stunning indoor and outdoor projects.
+           At TiCi, we blend science and nature to redefine how people engage with plants, aquascapes, and sustainable ecosystems
         </p>
 
         {/* Project Card */}
         <div className="bg-black/40 backdrop-blur-md p-4 md:p-6 rounded-xl flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 max-w-xl">
           <span className="text-lg font-semibold">Nature's Palette</span>
-          <button className="bg-[#3B6029] hover:bg-[#2E4E1E] text-white px-5 py-2 rounded-full font-medium transition">
+          <Link to="/projects" className="bg-[#3B6029] hover:bg-[#2E4E1E] text-white px-5 py-2 rounded-full font-medium transition">
             VIEW PROJECT
-          </button>
+          </Link>
         </div>
       </div>
     </section>

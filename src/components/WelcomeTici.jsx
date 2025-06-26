@@ -38,13 +38,13 @@ const WelcomeTici = () => {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    <motion.span
+                    {/* <motion.span
                         className="bg-[#526650] text-white px-4 py-2 rounded-full inline-block text-sm font-semibold uppercase tracking-wider shadow-md"
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 300 }}
                     >
                         Welcome to Tici
-                    </motion.span>
+                    </motion.span> */}
 
                     <h1 className="text-3xl md:text-4xl font-bold leading-tight">
                         Pioneering Tissue Culture & Aquascaping in India

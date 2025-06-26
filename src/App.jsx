@@ -22,6 +22,11 @@ import Crafting from './components/Crafting'
 import AboutUsSection from './components/AboutUsSection'
 import CommitmentSection from './components/AboutUs/CommitmentSection'
 import ScrollingSection from './components/ScrollingSection'
+import TrainingSection from './components/TrainingSection'
+import TrainingProgram from './components/Training/TrainingProgram'
+import ProductSection from './components/ProductSection'
+import ProductsPage from './components/Products/ProductsPage'
+import HomeProjects from './components/HomeProjects'
 
 
 function App() {
@@ -34,10 +39,13 @@ function App() {
           <>
             <Hero />
             <WelcomeTici/>
+            <HomeProjects/>
+            <ProductSection/>
+            <TrainingSection/>
             <ScrollingSection/>
             <ServiceSection />
             <Crafting/>
-            <CommitmentSection/>
+            {/* <CommitmentSection/> */}
             
             {/* <AboutUsSection /> */}
             <TestimonialsSection/>
@@ -50,6 +58,8 @@ function App() {
         <Route path='/contact' element={<ContactSection />} />
         <Route path='/services' element={<Services />} />
         <Route path='/aboutus' element={<AboutUsPage/>} />
+        <Route path='/training-program' element={<TrainingProgram/>} />
+        <Route path='/products' element={<ProductsPage/>} />
       </Routes>
       <Footer />
     </Router>
