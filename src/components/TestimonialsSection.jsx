@@ -135,7 +135,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const testimonials = [
   {
     quote:
-      "We hired Gardyn to transform our backyard, and the results were beyond our expectations. The team was professional, punctual, and incredibly knowledgeable about plants and landscaping.",
+      "We hired TiCi to transform our backyard, and the results were beyond our expectations. The team was professional, punctual, and incredibly knowledgeable about plants and landscaping.",
     author: "Donette Fondren",
   },
   {

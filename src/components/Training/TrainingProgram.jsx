@@ -1,171 +1,94 @@
-// // TrainingProgram.jsx
-// import React from "react";
-// import { FaCheckCircle } from "react-icons/fa";
-
-// const TrainingProgram = () => {
-//   return (
-//     <section className="bg-[#EEF3EC] py-16 px-6 min-h-screen mt-10">
-//       <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-xl p-8 border border-[#2E442F]/10">
-//         {/* Heading */}
-//         <h1 className="text-3xl md:text-4xl font-bold text-[#2E442F] text-center mb-4">
-//           TiCi’s 3-Month Intensive Training Program
-//         </h1>
-//         <p className="text-center text-[#2E442F]/70 mb-8 max-w-2xl mx-auto">
-//           Launch your career in plant tissue culture, aquascaping, greenhouse management and more.
-//         </p>
-
-//         {/* Curriculum */}
-//         <h2 className="text-2xl font-semibold text-[#2E442F] mb-3">Curriculum Covers:</h2>
-//         <ul className="space-y-2 mb-8 text-[#2E442F]/80 grid md:grid-cols-2 gap-4">
-//           {[
-//             "Tissue Culture & Greenhouse Maintenance",
-//             "Lab Operations, Sterilization, Media Prep",
-//             "Greenhouse Climate & Pest Control",
-//             "Irrigation & Organic Plant Care",
-//             "Aquascaping & Terrarium Design",
-//             "Hardscaping, Lighting & Filtration",
-//             "Terrarium Setup, Design & Plant Selection",
-//             "Natural Display Techniques",
-//             "Tissue Culture Applications & Business Skills",
-//             "Marketing for Plant Products",
-//             "Nursery Operations & Product Branding",
-//             "Project Management & Client Handling",
-//           ].map((item, i) => (
-//             <li key={i} className="flex items-center gap-2">
-//               <FaCheckCircle className="text-[#2E442F]" /> {item}
-//             </li>
-//           ))}
-//         </ul>
-
-//         {/* Eligibility */}
-//         <h2 className="text-2xl font-semibold text-[#2E442F] mb-3">Eligibility</h2>
-//         <ul className="list-disc list-inside mb-8 text-[#2E442F]/80 space-y-2">
-//           <li>Science Background (Biology/Botany/Biotech) for Lab Roles</li>
-//           <li>Creativity & Design Interest for Aquascaping</li>
-//           <li>10+2 or above with hands-on interest in gardening, fishkeeping, or decor</li>
-//         </ul>
-
-//         {/* Benefits */}
-//         <h2 className="text-2xl font-semibold text-[#2E442F] mb-3">Training Benefits</h2>
-//         <ul className="space-y-2 text-[#2E442F]/80 mb-8 list-disc list-inside">
-//           <li>Stipend of ₹5,000 (on successful completion)</li>
-//           <li>Free Meals & Accommodation</li>
-//           <li>Certification & Placement Assistance</li>
-//           <li>Career Pathways in Labs, Nurseries, Retail, or Design Studios</li>
-//         </ul>
-
-//         {/* Back to Home */}
-//         <div className="text-center mt-8">
-//           <a
-//             href="/"
-//             className="inline-block bg-[#2E442F] text-white px-6 py-3 rounded-full hover:bg-[#90A48B] transition"
-//           >
-//             ← Back to Home
-//           </a>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default TrainingProgram;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const TrainingProgram = () => {
-  return (
-    <section className="relative min-h-screen bg-[#EEF3EC] py-16 px-6 bg-cover bg-center mt-10"
-      style={{ backgroundImage: "url('/images/leaf-bg.webp')" }} // Optional subtle leaf pattern
-    >
-      <div className="absolute inset-0 bg-[#2E442F]/70" />
+  const curriculum = [
+    {
+      title: "1. Tissue Culture & Greenhouse Maintenance",
+      points: [
+        "Lab Operations, Sterilization, Media Prep",
+        "Greenhouse Climate & Pest Control",
+        "Irrigation & Organic Plant Care",
+      ],
+    },
+    {
+      title: "2. Aquascaping & Terrarium Design",
+      points: [
+        "Hardscaping Principles, Lighting & Filtration",
+        "Terrarium Setup, Design & Plant Selection",
+        "Natural Display Techniques",
+      ],
+    },
+    {
+      title: "3. Tissue Culture Applications & Business Skills",
+      points: [
+        "Marketing for Plant Products",
+        "Nursery Operations & Product Branding",
+        "Project Management & Client Handling",
+      ],
+    },
+  ];
 
-      <div className="relative z-10 max-w-7xl mx-auto text-center text-white">
-        <motion.h1
-          className="text-3xl md:text-5xl font-bold mb-4"
-          initial={{ opacity: 0, y: -20 }}
+  const eligibility = [
+    "Science Background (Biology/Botany/Biotech) for Lab Roles",
+    "Creativity & Design Interest for Aquascaping",
+    "10+2 or above with hands-on interest in gardening, fishkeeping, or decor",
+  ];
+
+  const benefits = [
+    "Stipend of ₹5,000 (on successful completion)",
+    "Free Meals & Accommodation",
+    "Certification & Placement Assistance",
+    "Career Pathways in Labs, Nurseries, Retail, or Design Studios",
+  ];
+
+  return (
+    <section
+      className="relative min-h-screen bg-[#EEF3EC] py-20 px-6 bg-cover bg-center mt-8"
+      style={{ backgroundImage: "url('/images/leaf-bg.webp')" }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#2E442F]/80 z-0" />
+
+      {/* Content Container */}
+      <div className="relative z-10 max-w-7xl mx-auto text-white">
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
+          className="text-center mb-12"
         >
-          TiCi’s 3-Month Intensive Training Program
-        </motion.h1>
-        <motion.p
-          className="text-[#EEF3EC]/90 max-w-2xl mx-auto mb-12 text-base md:text-lg"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          Build a green career with hands-on training in tissue culture, aquascaping, greenhouse management, and more.
-        </motion.p>
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-[#A8C1A2] to-[#EEF3EC] bg-clip-text text-transparent">
+            TiCi’s 3-Month Intensive Training Program
+          </h1>
+          <p className="text-[#EEF3EC]/90 text-base sm:text-lg max-w-3xl mx-auto">
+            Build a Green Career with Us — launch your journey in plant tissue culture, aquascaping, and greenhouse management through our hands-on, industry-backed training.
+          </p>
+        </motion.div>
 
-        {/* Three main content sections */}
+        {/* Cards Grid */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
           {/* Curriculum */}
           <motion.div
-            className="bg-white text-[#2E442F] p-6 rounded-xl shadow-xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
+            className="bg-white text-[#2E442F] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
           >
-            <h2 className="text-xl font-semibold mb-3">Curriculum Covers:</h2>
-            <ul className="space-y-2 text-sm">
-              {[
-                "Tissue Culture & Greenhouse Maintenance",
-                "Lab Operations, Sterilization, Media Prep",
-                "Greenhouse Climate & Pest Control",
-                "Irrigation & Organic Plant Care",
-                "Aquascaping & Terrarium Design",
-                "Hardscaping, Lighting & Filtration",
-                "Terrarium Setup & Plant Selection",
-                "Natural Display Techniques",
-                "Tissue Culture Business Skills",
-                "Marketing for Plant Products",
-                "Nursery Operations & Branding",
-                "Project Management & Client Handling",
-              ].map((item, i) => (
-                <li key={i} className="flex items-center gap-2">
-                  <FaCheckCircle className="text-[#90A48B]" /> {item}
+            <h2 className="text-xl font-semibold mb-4">📘 Curriculum Covers</h2>
+            <ul className="pl-3 space-y-4 text-sm text-[#2E442F]/90">
+              {curriculum.map((section, i) => (
+                <li key={i}>
+                  <strong>{section.title}</strong>
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    {section.points.map((point, j) => (
+                      <li key={j}>{point}</li>
+                    ))}
+                  </ul>
                 </li>
               ))}
             </ul>
@@ -173,52 +96,57 @@ const TrainingProgram = () => {
 
           {/* Eligibility */}
           <motion.div
-            className="bg-white text-[#2E442F] p-6 rounded-xl shadow-xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
+            className="bg-white text-[#2E442F] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
           >
-            <h2 className="text-xl font-semibold mb-3">Eligibility</h2>
-            <ul className="list-disc list-inside text-sm space-y-2">
-              <li>Biology/Botany/Biotech background for lab roles</li>
-              <li>Design interest for aquascaping</li>
-              <li>10+2 or above for gardening, fishkeeping, or decor</li>
+            <h2 className="text-xl font-semibold mb-4">✅ Eligibility</h2>
+            <ul className="pl-5 list-disc space-y-2 text-sm text-[#2E442F]/90">
+              {eligibility.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
             </ul>
           </motion.div>
 
           {/* Benefits */}
           <motion.div
-            className="bg-white text-[#2E442F] p-6 rounded-xl shadow-xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
+            className="bg-white text-[#2E442F] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
           >
-            <h2 className="text-xl font-semibold mb-3">Training Benefits</h2>
-            <ul className="list-disc list-inside text-sm space-y-2">
-              <li>Stipend of ₹5,000 (on completion)</li>
-              <li>Free Meals & Accommodation</li>
-              <li>Certification & Placement Support</li>
-              <li>Career pathways in labs, nurseries, retail, or design studios</li>
+            <h2 className="text-xl font-semibold mb-4">🎁 Training Benefits</h2>
+            <ul className="pl-5 list-disc space-y-2 text-sm text-[#2E442F]/90">
+              {benefits.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
             </ul>
           </motion.div>
         </div>
 
-        {/* Back to Home */}
+        {/* CTA Buttons */}
         <motion.div
-          className="mt-12"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
           viewport={{ once: true }}
+          className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-6"
         >
           <a
-            href="/"
-            className="inline-block bg-[#90A48B] text-[#2E442F] font-semibold px-8 py-3 rounded-full hover:bg-white transition shadow-xl"
+            href="/apply"
+            className="bg-[#90A48B] text-[#2E442F] font-semibold px-8 py-3 rounded-full hover:bg-white transition-colors shadow-lg"
+          >
+            🚀 Apply Now
+          </a>
+          <Link
+            to="/"
+            className="border border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-[#2E442F] transition-colors"
           >
             ← Back to Home
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

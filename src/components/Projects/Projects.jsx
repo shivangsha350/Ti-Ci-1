@@ -39,7 +39,7 @@ const Projects = () => {
     <div className="bg-white">
       {/* Hero Section */}
       <section
-        className="relative h-[80vh] w-full flex items-center justify-start bg-cover bg-center bg-no-repeat px-6 mt-10"
+        className="relative h-[80vh] w-full flex items-center justify-start bg-cover bg-center bg-no-repeat px-6 mt-9"
         style={{ backgroundImage: `url('/projects/2.jpg')` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-0"></div>
