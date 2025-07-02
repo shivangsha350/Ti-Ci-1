@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const WelcomeTici = () => {
     return (
-        <section className="min-h-screen bg-white flex items-center justify-center px-6 py-20 overflow-hidden">
+        <section className="mt-0 min-h-screen bg-white flex items-center justify-center px-6 py-5 overflow-hidden">
             <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-12">
 
                 {/* Left Side Images */}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -31,14 +31,14 @@ const Navbar = () => {
       >
         {/* === Top Info Bar === */}
         <div className="bg-[#374C37] text-white text-sm">
-          <div className="hidden md:flex justify-between items-center px-6 py-2 max-w-7xl mx-auto">
-            <div className="flex space-x-6">
+          <div className="hidden md:flex justify-end items-centre px-6 py-2 max-w-7xl mx-auto">
+            {/* <div className="flex space-x-6">
               <span>🕒 Mon - Fri 08.00 - 18.00</span>
               <span>📍 100 S Main St, NY</span>
               <span>📧 contact@tici.com</span>
-            </div>
-            <div className="flex space-x-4">
-              {[<FaFacebookF />, <FaTwitter />, <FaYoutube />, <FaInstagram />].map((Icon, idx) => (
+            </div> */}
+            <div className=" flex space-x-4">
+              {[<FaFacebookF size={20} />,<FaWhatsapp size={20}/>, <FaInstagram size={20} />].map((Icon, idx) => (
                 <span key={idx} className="hover:text-[#E87722] cursor-pointer transition-colors">
                   {Icon}
                 </span>
@@ -52,8 +52,8 @@ const Navbar = () => {
           <div className="flex justify-between items-center px-6 py-3 max-w-7xl mx-auto">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2 text-2xl font-bold text-white">
-              <img src="/TiCi.jpeg" alt="TiCi" className="h-7 w-7" />
-              <span>TiCi</span>
+              <img src="/TiCi.jpeg" alt="TiCi" className="h-11 w-12 m-0" />
+              {/* <span>TiCi</span> */}
             </Link>
 
             {/* Desktop Menu */}
@@ -134,13 +134,6 @@ const Navbar = () => {
         </nav>
 
         <hr className="border-white/20 mb-8" />
-
-        <div>
-          <h2 className="font-semibold text-lg mb-2">Contact Us</h2>
-          <p className="mb-1">🕒 Mon - Fri 08.00 - 18.00</p>
-          <p className="mb-1">📍 100 S Main St, NY</p>
-          <p className="mb-1">📧 contact@TiCi.com</p>
-        </div>
       </aside>
 
       {/* === Sidebar Overlay === */}

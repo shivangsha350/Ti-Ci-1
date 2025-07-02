@@ -22,9 +22,9 @@ const products = [
 
 const ProductSection = () => {
   return (
-    <section className="bg-[#EEF3EC] py-16 px-6">
+    <section className="bg-[#EEF3EC] py-5 px-6">
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#2E442F]">Our Products</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#2E442F] py-0">Our Products</h2>
         <p className="text-[#2E442F]/70 mt-2 max-w-xl mx-auto">
           Explore our range of premium gardening and aquascaping products — thoughtfully crafted to inspire green living.
         </p>

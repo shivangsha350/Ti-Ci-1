@@ -108,10 +108,10 @@ import { motion } from "framer-motion";
 
 const TrainingSection = () => {
   return (
-    <section className="bg-[#EEF3EC] py-20 px-6 relative overflow-hidden">
-      <div className="text-center mb-12">
+    <section className="bg-[#EEF3EC] py-15 px-6 relative overflow-hidden">
+      <div className="text-center mb-10">
         <h2 className="text-3xl md:text-5xl font-extrabold text-[#2E442F] mb-2">
-          Our Training <span className="text-[#90A48B]">Program</span>
+          Our Training Program
         </h2>
         <p className="text-[#2E442F]/80 max-w-2xl mx-auto mt-2 text-lg">
           Build a Green Career with TiCi’s 3-Month Intensive Program.

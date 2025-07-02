@@ -29,7 +29,7 @@ const ProductsPage = () => {
     <section className="bg-[#EEF3EC] min-h-screen py-16 px-6 mt-10">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#2E442F]">Our Products</h1>
-        <p className="text-[#2E442F]/70 mt-2 max-w-xl mx-auto">
+        <p className="text-[#2E442F]/70 mt-2 max-w-xl mx-auto text-xs">
           Browse our carefully curated gardening & aquascaping products — crafted for beauty and sustainability.
         </p>
       </div>
