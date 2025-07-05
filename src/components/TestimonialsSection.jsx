@@ -128,9 +128,111 @@
 
 
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
+// import { FaQuoteLeft } from "react-icons/fa";
+// import { motion, AnimatePresence } from "framer-motion";
+
+// const testimonials = [
+//   {
+//     quote:
+//       "We hired TiCi to transform our backyard, and the results were beyond our expectations. The team was professional, punctual, and incredibly knowledgeable about plants and landscaping.",
+//     author: "Donette Fondren",
+//   },
+//   {
+//     quote:
+//       "TiCi completely changed the way we think about green interiors. Their terrarium and moss wall designs brought life into our office space.",
+//     author: "Rahul Mehta",
+//   },
+//   {
+//     quote:
+//       "The hydroponics system they installed at our school is both educational and beautiful. It’s a sustainable learning tool we didn’t know we needed.",
+//     author: "Sonal Kapoor",
+//   },
+// ];
+
+// // Animation variants
+// const fadeSlide = {
+//   hidden: { opacity: 0, y: 20 },
+//   visible: { opacity: 1, y: 0 },
+//   exit: { opacity: 0, y: -20 },
+// };
+
+// const TestimonialSection = () => {
+//   const [index, setIndex] = useState(0);
+
+//   const handleDotClick = (i) => {
+//     setIndex(i);
+//   };
+
+//   return (
+//     <section
+//       className="relative w-full py-24 px-6 bg-[#EEF3EC] bg-center bg-cover text-center"
+//       style={{
+//         backgroundImage: "url('/pattern-bg.png')",
+//       }}
+//     >
+//       <div className="max-w-5xl mx-auto">
+//         <motion.div
+//           initial={{ scale: 0.5, opacity: 0 }}
+//           animate={{ scale: 1, opacity: 1 }}
+//           transition={{ duration: 0.6, ease: "easeOut" }}
+//         >
+//           <FaQuoteLeft className="text-4xl mx-auto text-[#3D5734] mb-6" />
+//         </motion.div>
+
+//         <AnimatePresence mode="wait">
+//           <motion.div
+//             key={index}
+//             variants={fadeSlide}
+//             initial="hidden"
+//             animate="visible"
+//             exit="exit"
+//             transition={{ duration: 0.5, ease: "easeInOut" }}
+//           >
+//             <p className="text-2xl md:text-3xl font-medium text-[#2E442F] leading-relaxed mb-6">
+//               {testimonials[index].quote}
+//             </p>
+//             <p className="text-gray-600 font-medium">{testimonials[index].author}</p>
+//           </motion.div>
+//         </AnimatePresence>
+
+//         {/* Dots Navigation */}
+//         <div className="mt-8 flex justify-center space-x-4">
+//           {testimonials.map((_, i) => (
+//             <motion.button
+//               whileHover={{ scale: 1.2 }}
+//               whileTap={{ scale: 0.9 }}
+//               key={i}
+//               onClick={() => handleDotClick(i)}
+//               className={`w-3 h-3 rounded-full transition-all duration-300 ${
+//                 index === i
+//                   ? "bg-[#3D5734] scale-110"
+//                   : "bg-[#A0B49A] opacity-50"
+//               }`}
+//             />
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default TestimonialSection;
+
+
+
+
+
+
+
+
+
+
+
+
+import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -150,69 +252,48 @@ const testimonials = [
   },
 ];
 
-// Animation variants
-const fadeSlide = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -20 },
-};
+// Duplicate testimonials to create infinite scrolling effect
+const scrollingTestimonials = [...testimonials, ...testimonials];
 
 const TestimonialSection = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleDotClick = (i) => {
-    setIndex(i);
-  };
-
   return (
     <section
-      className="relative w-full py-24 px-6 bg-[#EEF3EC] bg-center bg-cover text-center"
+      className="w-full py-10 px-6 bg-[#EEF3EC] bg-center bg-cover overflow-hidden"
       style={{
         backgroundImage: "url('/pattern-bg.png')",
       }}
     >
-      <div className="max-w-5xl mx-auto">
-        <motion.div
-          initial={{ scale: 0.5, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          <FaQuoteLeft className="text-4xl mx-auto text-[#3D5734] mb-6" />
-        </motion.div>
-
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={index}
-            variants={fadeSlide}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          >
-            <p className="text-2xl md:text-3xl font-medium text-[#2E442F] leading-relaxed mb-6">
-              {testimonials[index].quote}
-            </p>
-            <p className="text-gray-600 font-medium">{testimonials[index].author}</p>
-          </motion.div>
-        </AnimatePresence>
-
-        {/* Dots Navigation */}
-        <div className="mt-8 flex justify-center space-x-4">
-          {testimonials.map((_, i) => (
-            <motion.button
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              key={i}
-              onClick={() => handleDotClick(i)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === i
-                  ? "bg-[#3D5734] scale-110"
-                  : "bg-[#A0B49A] opacity-50"
-              }`}
-            />
-          ))}
-        </div>
+      <div className="max-w-6xl mx-auto text-center mb-12">
+        <FaQuoteLeft className="text-4xl text-[#3D5734] mx-auto mb-4" />
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#2E442F]">
+          What Our Clients Say
+        </h2>
       </div>
+
+      <motion.div
+        className="flex w-max space-x-8"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{
+          repeat: Infinity,
+          duration: 20,
+          ease: "linear",
+        }}
+      >
+        {scrollingTestimonials.map((testimonial, index) => (
+<div
+  key={index}
+  className="bg-[#c7d2c2]  shadow-md rounded-2xl p-8 flex flex-col justify-between w-[300px] md:w-[350px] shrink-0 h-95"
+>
+
+            <p className="text-gray-800 text-lg leading-relaxed mb-6">
+              “{testimonial.quote}”
+            </p>
+            <p className="text-[#3D5734] font-semibold text-right">
+              — {testimonial.author}
+            </p>
+          </div>
+        ))}
+      </motion.div>
     </section>
   );
 };
