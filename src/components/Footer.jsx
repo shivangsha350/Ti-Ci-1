@@ -1,5 +1,6 @@
 import React from 'react';
-import { Leaf, Facebook, Twitter, Instagram, Youtube, MessageCircle, MapPin, Clock, Mail } from 'lucide-react';
+import { Leaf, Facebook, Twitter, Instagram, Youtube, MessageCircle, MapPin, Clock, Mail} from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -62,17 +63,17 @@ const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-[#2E442F] rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors">
-                <Twitter className="w-5 h-5" />
+                <FaWhatsapp className="w-5 h-5" />
               </a>
+              {/* <a href="#" className="w-10 h-10 bg-[#2E442F] rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors">
+                <Twitter className="w-5 h-5" />
+              </a> */}
               <a href="#" className="w-10 h-10 bg-[#2E442F] rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-[#2E442F] rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors">
-                <Youtube className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-[#2E442F] rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors">
+              {/* <a href="#" className="w-10 h-10 bg-[#2E442F] rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors">
                 <MessageCircle className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 

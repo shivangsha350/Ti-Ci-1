@@ -26,7 +26,7 @@ const allProducts = [
 
 const ProductsPage = () => {
   return (
-    <section className="bg-[#EEF3EC] min-h-screen py-16 px-6 mt-10">
+    <section className="bg-[#EEF3EC] min-h-screen py-15 px-6 mt-10">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#2E442F]">Our Products</h1>
         <p className="text-[#2E442F]/70 mt-2 max-w-xl mx-auto text-xs">
@@ -47,6 +47,9 @@ const ProductsPage = () => {
             <div className="p-5 text-center">
               <h2 className="text-lg font-semibold text-[#2E442F] mb-2">{product.title}</h2>
               <p className="text-[#2E442F]/70 text-sm">{product.description}</p>
+            </div>
+            <div className="flex justify-center">
+              <a href="#" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</a>
             </div>
           </div>
         ))}
