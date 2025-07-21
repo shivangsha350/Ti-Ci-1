@@ -1,5 +1,5 @@
 import React from 'react';
-import { Leaf, Facebook, Twitter, Instagram, Youtube, MessageCircle, MapPin, Clock, Mail} from 'lucide-react';
+import { Leaf, Facebook, Twitter, Instagram, Youtube, MessageCircle, MapPin, Clock, Mail,Contact} from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
@@ -110,7 +110,7 @@ const Footer = () => {
                 <Clock className="w-5 h-5 text-green-400" />
                 <span className="font-semibold">We're Open</span>
               </div>
-              <p className="text-gray-300">Monday - Friday 08:00 - 18:00</p>
+              <p className="text-gray-300">Monday - Saturday 09:00 - 18:00</p>
             </div>
 
             <div>
@@ -118,7 +118,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-green-400" />
                 <span className="font-semibold">Office Location</span>
               </div>
-              <p className="text-gray-300">100 S Main St, New York, NY</p>
+              <p className="text-gray-300">Santragachi, Howrah, West Bengal, India</p>
             </div>
 
             <div>
@@ -126,7 +126,14 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-green-400" />
                 <span className="font-semibold">Send a Message</span>
               </div>
-              <p className="text-gray-300">contact@Tici.com</p>
+              <p className="text-gray-300">ticinaturelab@gmail.com</p>
+            </div>
+              <div>
+              <div className="flex items-center space-x-2 mb-3">
+                <Contact className="w-5 h-5 text-green-400" />
+                <span className="font-semibold">Contact</span>
+              </div>
+              <p className="text-gray-300">+91 8336992968</p>
             </div>
           </div>
         </div>
@@ -134,7 +141,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-green-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            Copyright © 2024 Tici by Designesia
+            Copyright © 2024 Tici by Simtrak Solutions
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms & Conditions</a>

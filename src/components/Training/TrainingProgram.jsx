@@ -77,9 +77,9 @@ const TrainingProgram = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="bg-white text-[#2E442F] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
+            className="bg-[#c6d4c6] text-[#2E442F] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
           >
-            <h2 className="text-xl font-semibold mb-4">📘 Curriculum Covers</h2>
+            <h2 className="text-xl font-semibold mb-4"> Curriculum Covers</h2>
             <ul className="pl-3 space-y-4 text-sm text-[#2E442F]/90">
               {curriculum.map((section, i) => (
                 <li key={i}>
@@ -100,9 +100,9 @@ const TrainingProgram = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
-            className="bg-white text-[#2E442F] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
+            className="bg-[#c6d4c6] text-[#2E442F] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
           >
-            <h2 className="text-xl font-semibold mb-4">✅ Eligibility</h2>
+            <h2 className="text-xl font-semibold mb-4"> Eligibility</h2>
             <ul className="pl-5 list-disc space-y-2 text-sm text-[#2E442F]/90">
               {eligibility.map((item, i) => (
                 <li key={i}>{item}</li>
@@ -116,9 +116,9 @@ const TrainingProgram = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-white text-[#2E442F] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
+            className="bg-[#c6d4c6] text-[#2E442F] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
           >
-            <h2 className="text-xl font-semibold mb-4">🎁 Training Benefits</h2>
+            <h2 className="text-xl font-semibold mb-4"> Training Benefits</h2>
             <ul className="pl-5 list-disc space-y-2 text-sm text-[#2E442F]/90">
               {benefits.map((item, i) => (
                 <li key={i}>{item}</li>
@@ -139,7 +139,7 @@ const TrainingProgram = () => {
             href="/apply"
             className="bg-[#90A48B] text-[#2E442F] font-semibold px-8 py-3 rounded-full hover:bg-white transition-colors shadow-lg"
           >
-            🚀 Apply Now
+             Apply Now
           </a>
           <Link
             to="/"

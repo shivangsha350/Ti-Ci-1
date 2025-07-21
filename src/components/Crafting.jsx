@@ -212,16 +212,11 @@ const Crafting = () => {
           </h1>
 
           <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
-            TiCi began in 2012 as Aquasphere, focused on aquascaping. In 2021 we
-            rebranded to TiCi — specializing in tissue culture, sustainable
-            ecosystems, and green innovation.
+            TiCi is where science meets art and design meets ecology. We build living systems which include planted aquariums, vertical gardens, insect farms, and immersive natural enclosures that invite people to reconnect with nature.
           </p>
 
           <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
-            Our milestones include launching a homegrown aquascaping product
-            line, setting up advanced labs for plant tissue culture, training
-            future green professionals, and partnering with educational
-            institutes.
+            Rooted in hands-on experimentation and deep ecological observation, TiCi blends biotechnology with design to create sustainable ecosystems for hobbyists, greenpreneurs, and future-forward spaces. We don’t just add greenery, we grow experiences!
           </p>
 
           <div className="pt-2 sm:pt-4">

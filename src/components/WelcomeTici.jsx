@@ -50,8 +50,10 @@ const WelcomeTici = () => {
                         Pioneering Tissue Culture & Aquascaping in India
                     </h1>
 
-                    <p className="text-lg md:text-xl leading-relaxed text-[#526650]">
-                        At TiCi, we blend science and nature to redefine how people engage with plants, aquascapes, and sustainable ecosystems. Established in 2012 (originally as Aquasphere), TiCi has evolved into a cutting-edge organization specializing in tissue culture, aquascaping, terrariums, hydroponics, aquaponics, and urban rainforest designs. With a unique fusion of biotechnology and artistic vision, we offer innovative solutions for hobbyists, greenpreneurs, and urban spaces.
+                    <p className="text-lg md:text-xl leading-relaxed text-[#526650]">At TiCi, we don’t just create green spaces—we craft living ecosystems. From lush vertical gardens and serene planted aquariums to sustainable insect farms and immersive natural enclosures, every project we touch is rooted in biology, built through design, and nurtured with a deep respect for life.
+We are a bio-design studio based in Howrah, West Bengal, transforming homes, offices, schools, and public spaces into vibrant ecological environments. Our mission is simple: to bring nature back into everyday life—ethically, artistically, and intelligently.
+
+                        {/* At TiCi, we blend science and nature to redefine how people engage with plants, aquascapes, and sustainable ecosystems. Established in 2012 (originally as Aquasphere), TiCi has evolved into a cutting-edge organization specializing in tissue culture, aquascaping, terrariums, hydroponics, aquaponics, and urban rainforest designs. With a unique fusion of biotechnology and artistic vision, we offer innovative solutions for hobbyists, greenpreneurs, and urban spaces. */}
                     </p>
 
                     {/* Optional Button */}

@@ -51,7 +51,7 @@ const Projects = () => {
             Featured Projects Across India
           </p>
           <Link
-            to="/services"
+            to="/"
             className="bg-[#3B6029] hover:bg-[#2E4E1E] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:scale-105"
           >
             OUR SERVICES

@@ -60,7 +60,7 @@ const ContactSection = () => {
                                             <span>🕒</span> We're Open
                                         </p>
                                         <p className="ml-6 text-sm text-gray-600">
-                                            Monday - Friday 08.00 - 18.00
+                                            Monday - Saturday 09.00 - 18.00
                                         </p>
                                     </div>
                                     <div>
@@ -68,21 +68,21 @@ const ContactSection = () => {
                                             <span>📍</span> Office Location
                                         </p>
                                         <p className="ml-6 text-sm text-gray-600">
-                                            100 S Main St, New York, NY
+                                              Santragachi, Howrah, West Bengal, India
                                         </p>
                                     </div>
                                     <div>
                                         <p className="font-semibold flex items-center gap-2">
                                             <span>📞</span> Call Us Directly
                                         </p>
-                                        <p className="ml-6 text-sm text-gray-600">+1 123 456 789</p>
+                                        <p className="ml-6 text-sm text-gray-600"> +91 83369 92968</p>
                                     </div>
                                     <div>
                                         <p className="font-semibold flex items-center gap-2">
                                             <span>📧</span> Send a Message
                                         </p>
                                         <p className="ml-6 text-sm text-gray-600">
-                                            contact@gardyn.com
+                                            ticinaturelab@gmail.com
                                         </p>
                                     </div>
                                 </div>

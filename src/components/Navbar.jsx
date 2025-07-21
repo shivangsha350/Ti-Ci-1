@@ -31,14 +31,14 @@ const Navbar = () => {
       >
         {/* === Top Info Bar === */}
         <div className="bg-[#374C37] text-white text-sm">
-          <div className="hidden md:flex justify-end items-centre px-6 py-2 max-w-7xl mx-auto">
+          <div className="hidden md:flex justify-end items-centre px-0 py-2 max-w-7xl mx-auto">
             {/* <div className="flex space-x-6">
               <span>🕒 Mon - Fri 08.00 - 18.00</span>
               <span>📍 100 S Main St, NY</span>
               <span>📧 contact@tici.com</span>
             </div> */}
             <div className=" flex space-x-4">
-              {[<FaFacebookF size={20} />,<FaWhatsapp size={20}/>, <FaInstagram size={20} />].map((Icon, idx) => (
+              {[<FaFacebookF size={25} />,<FaWhatsapp size={25}/>, <FaInstagram size={25} />].map((Icon, idx) => (
                 <span key={idx} className="hover:text-[#E87722] cursor-pointer transition-colors">
                   {Icon}
                 </span>
@@ -49,9 +49,9 @@ const Navbar = () => {
 
         {/* === Navigation Bar === */}
         <nav className="w-full">
-          <div className="flex justify-between items-center px-6 py-3 max-w-7xl mx-auto">
+          <div className="flex justify-between items-center px-2 py-3 max-w-7xl mx-auto">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2 text-2xl font-bold text-white">
+            <Link to="/" className="flex items-center space-x-2 text-xl font-bold text-white">
               <img src="/TiCi.jpeg" alt="TiCi" className="h-11 w-12 m-0" />
               {/* <span>TiCi</span> */}
             </Link>

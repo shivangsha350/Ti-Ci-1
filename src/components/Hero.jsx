@@ -102,12 +102,11 @@ const Hero = () => {
 
       {/* Text Content */}
       <div className="relative z-10 text-white max-w-3xl space-y-6 mt-16 md:mt-0">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          Welcome to TiCi
+        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+          Welcome to TiCi Nature Lab
         </h1>
         <p className="text-base md:text-lg max-w-xl opacity-90">
-          At TiCi, we blend science and nature to redefine how people engage with plants,
-          aquascapes, and sustainable ecosystems.
+          TiCi transforms everyday spaces into immersive ecosystems by blending biology, design, and care to reshape how we live with nature. 
         </p>
 
         {/* Action Buttons Block */}
