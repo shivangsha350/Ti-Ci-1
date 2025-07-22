@@ -27,6 +27,8 @@ import TrainingProgram from './components/Training/TrainingProgram'
 import ProductSection from './components/ProductSection'
 import ProductsPage from './components/Products/ProductsPage'
 import HomeProjects from './components/HomeProjects'
+import BlogList from './components/Blogs/Blogs'
+import BlogDetail from './components/Blogs/BlogDetail'
 
 
 function App() {
@@ -60,6 +62,8 @@ function App() {
         <Route path='/aboutus' element={<AboutUsPage/>} />
         <Route path='/training-program' element={<TrainingProgram/>} />
         <Route path='/products' element={<ProductsPage/>} />
+        <Route path='/blog' element={<BlogList />} />
+        <Route path='/blog/:id' element={<BlogDetail />} />
       </Routes>
       <Footer />
     </Router>

@@ -20,6 +20,7 @@ const Navbar = () => {
     { name: "PRODUCT", to: "/products" },
     { name: "TRAINING", to: "/training-program" },
     { name: "CONTACT", to: "/contact" },
+    { name: "BLOGS", to: "/blog" },
   ];
 
   return (
