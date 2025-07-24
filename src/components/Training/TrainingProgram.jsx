@@ -7,40 +7,40 @@ const TrainingProgram = () => {
     {
       title: "1. Tissue Culture & Greenhouse Maintenance",
       points: [
-        "Lab Operations, Sterilization, Media Prep",
-        "Greenhouse Climate & Pest Control",
-        "Irrigation & Organic Plant Care",
+"Sterile lab techniques, media preparation, and micropropagation",
+"Climate control, organic plant care, and integrated pest management",
+"Drip irrigation, misting systems, and sustainable nursery practices",
+
       ],
     },
     {
       title: "2. Aquascaping & Terrarium Design",
       points: [
-        "Hardscaping Principles, Lighting & Filtration",
-        "Terrarium Setup, Design & Plant Selection",
-        "Natural Display Techniques",
+"Hardscaping, lighting, and aquatic filtration techniques",
+"Tropical plant selection for terrariums and nature aquariums",
+"Display aesthetics and ecosystem-building for living art installations",
       ],
     },
     {
       title: "3. Tissue Culture Applications & Business Skills",
       points: [
-        "Marketing for Plant Products",
-        "Nursery Operations & Product Branding",
-        "Project Management & Client Handling",
+"Branding and marketing eco-products (plants, setups, décor)",
+"Nursery setup, customer handling, and project management",
+"Building a sustainable career in horticulture, bio-design, or urban farming",
       ],
     },
   ];
 
   const eligibility = [
-    "Science Background (Biology/Botany/Biotech) for Lab Roles",
-    "Creativity & Design Interest for Aquascaping",
-    "10+2 or above with hands-on interest in gardening, fishkeeping, or decor",
+"Students or graduates in Biology, Botany, Biotechnology (for lab roles)",
+"Creative minds interested in aquascaping, eco-decor, or nature-inspired design",
+"Anyone (10+2 or above) with a hands-on passion for gardening, fishkeeping, or green living",
   ];
 
   const benefits = [
-    "Stipend of ₹5,000 (on successful completion)",
-    "Free Meals & Accommodation",
-    "Certification & Placement Assistance",
-    "Career Pathways in Labs, Nurseries, Retail, or Design Studios",
+"₹5,000 stipend on successful completion",
+"Free meals and accommodation during the program",
+"Certification plus career support in labs, nurseries, design studios & more",
   ];
 
   return (
@@ -65,7 +65,7 @@ const TrainingProgram = () => {
             TiCi’s 3-Month Intensive Training Program
           </h1>
           <p className="text-[#EEF3EC]/90 text-base sm:text-lg max-w-3xl mx-auto">
-            Build a Green Career with Us — launch your journey in plant tissue culture, aquascaping, and greenhouse management through our hands-on, industry-backed training.
+            Turn Your Passion for Plants into a Green Career
           </p>
         </motion.div>
 
