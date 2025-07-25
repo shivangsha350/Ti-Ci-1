@@ -58,29 +58,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const images = ["/Hero.webp", "/2.webp", "/Hero3.webp"];
+const images = ["/balcony-vertical-garden.jpg", "/vertical-garden.jpg", "/indoor-rainforest.jpg"];
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
