@@ -4,17 +4,19 @@ import React from "react";
 const allProducts = [
   {
     title: "Terrarium Kits",
-    image: "/Product1.avif",
+    // image: "/Product1.avif",
+    image: "/Terrarium/1.jpg",
     description: "A complete kit for creating your own beautiful terrarium."
   },
   {
     title: "Tissue Culture Plants",
-    image: "/Product2.avif",
+    // image: "/Product2.avif",
+    image:"/Ammania-Senegalensia.jpg",
     description: "Lab-grown healthy, vibrant tissue culture plants."
   },
   {
     title: "Hydroponic Systems",
-    image: "/Product3.avif",
+    image: "/Nature-pond/IMG_0451.JPG",
     description: "Eco-friendly hydroponic setups that save water & space."
   },
   {
