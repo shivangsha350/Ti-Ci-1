@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
 
           {/* Services Links */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-6">Our Services</h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Garden Design</a></li>
@@ -101,39 +101,36 @@ const Footer = () => {
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Irrigation Services</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Specialty Services</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div className="space-y-6">
             <div>
+              <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
               <div className="flex items-center space-x-2 mb-3">
                 <Clock className="w-5 h-5 text-green-400" />
-                <span className="font-semibold">We're Open</span>
+                <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">Monday - Saturday 09:00 - 18:00</span>
               </div>
-              <p className="text-gray-300">Monday - Saturday 09:00 - 18:00</p>
-            </div>
+              </div>
 
             <div>
               <div className="flex items-center space-x-2 mb-3">
                 <MapPin className="w-5 h-5 text-green-400" />
-                <span className="font-semibold">Office Location</span>
+                <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">Santragachi, Howrah, West Bengal, India</span>
               </div>
-              <p className="text-gray-300">Santragachi, Howrah, West Bengal, India</p>
             </div>
 
             <div>
               <div className="flex items-center space-x-2 mb-3">
                 <Mail className="w-5 h-5 text-green-400" />
-                <span className="font-semibold">Send a Message</span>
+                <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">ticinaturelab@gmail.com</span>
               </div>
-              <p className="text-gray-300">ticinaturelab@gmail.com</p>
             </div>
               <div>
               <div className="flex items-center space-x-2 mb-3">
                 <Contact className="w-5 h-5 text-green-400" />
-                <span className="font-semibold">Contact</span>
+                <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">+91 8336992968</span>
               </div>
-              <p className="text-gray-300">+91 8336992968</p>
             </div>
           </div>
         </div>

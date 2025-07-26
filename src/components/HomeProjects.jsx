@@ -16,7 +16,7 @@ const HomeProjects = () => {
           viewport={{ once: true }}
         >
           <img
-            src="/projects/2.jpg"
+            src="/projects/vertical garden.jpg"
             alt="Projects"
             className="w-full h-full object-cover"
           />

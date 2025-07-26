@@ -70,7 +70,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-3 md:space-x-2">
               {/* Get In Touch */}
               <button className="hidden md:block border px-4 py-2 rounded-full text-white hover:bg-[#4e5a49] transition-colors font-semibold">
-                GET IN TOUCH
+                Apply for Program
               </button>
 
               {/* Menu Icon — shown on all screen sizes */}
