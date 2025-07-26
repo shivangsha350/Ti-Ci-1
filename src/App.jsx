@@ -13,8 +13,6 @@ import AboutUsPage from './components/AboutUs/AboutUs'
 
 // import LatestWorks from './components/LatestWorks'
 
-
-
 import LatestWorks from './components/LatestWorks'
 
 import WelcomeTici from './components/WelcomeTici'
@@ -64,7 +62,7 @@ function App() {
         <Route path='/products' element={<ProductsPage/>} />
         <Route path='/blog' element={<BlogList />} />
         <Route path='/blog/:id' element={<BlogDetail />} />
-      </Routes>
+        </Routes>
       <Footer />
     </Router>
   )

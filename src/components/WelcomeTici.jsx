@@ -16,7 +16,7 @@ const WelcomeTici = () => {
                     viewport={{ once: true }}
                 >
                     <img
-                        src="/plant3.webp"
+                        src="/nature-aquarium.jpg"
                         alt="Plants top view"
                         className="rounded-xl shadow-xl w-[90%] h-auto object-cover mx-auto transition-transform duration-300 hover:scale-105"
                     />

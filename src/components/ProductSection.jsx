@@ -5,17 +5,17 @@ import { motion } from "framer-motion";
 const products = [
   {
     title: "Terrarium Kits",
-    image: "/Product1.avif",
+    image: "/Terrarium/1.jpg",
     description: "Beautiful DIY terrarium kits for every skill level."
   },
   {
     title: "Tissue Culture Plants",
-    image: "/Product2.avif",
+    image: "/Ammania-Senegalensia.jpg",
     description: "Premium lab-grown tissue culture plants to enhance your garden."
   },
   {
     title: "Hydroponic Systems",
-    image: "/Product3.avif",
+    image: "/Nature-pond/IMG_0451.JPG",
     description: "Efficient & eco-friendly hydroponic setups for modern spaces."
   }
 ];

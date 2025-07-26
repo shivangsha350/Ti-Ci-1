@@ -53,7 +53,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center px-2 py-3 max-w-7xl mx-auto">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2 text-xl font-bold text-white">
-              <img src="/TiCi.jpeg" alt="TiCi" className="h-11 w-12 m-0" />
+              <img src="/TICI.png" alt="TiCi" className="h-12 w-15 m-0"/>
               {/* <span>TiCi</span> */}
             </Link>
 
