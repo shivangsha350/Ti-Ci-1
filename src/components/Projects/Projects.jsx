@@ -7,28 +7,28 @@ const project = [
   {
     name: 'Public Aquarium',
     location: 'Metro Cities',
-    image: '/projects/1.jpeg',
+    image: '/projects/Public-Aquarium.jpg',
     description:
       'We specialize in designing stunning public aquarium installations for metropolitan areas, creating captivating underwater worlds.',
   },
   {
     name: 'Indoor Rainforest',
     location: 'Luxury Resorts',
-    image: '/projects/2.jpg',
+    image: '/public/projects/indoor rainforest.jpg',
     description:
       'Transform luxury resorts with lush indoor rainforest décor, bringing vibrant greenery and tropical ambience indoors.',
   },
   {
     name: 'Vertical Farming',
     location: 'Urban Balconies',
-    image: '/projects/3.webp',
+    image: '/projects/vertical-farming.jpg',
     description:
       'Create sustainable vertical farming setups for urban balconies, helping city dwellers grow their own fresh produce.',
   },
   {
     name: 'Aquaponic Demos',
     location: 'Schools',
-    image: '/projects/4.jpg',
+    image: '/projects/3.avif',
     description:
       'Educational aquaponic demonstrations that help students understand eco-friendly, soil-less farming techniques.',
   },
@@ -40,7 +40,7 @@ const Projects = () => {
       {/* Hero Section */}
       <section
         className="relative h-[80vh] w-full flex items-center justify-start bg-cover bg-center bg-no-repeat px-6 mt-9"
-        style={{ backgroundImage: `url('/projects/2.jpg')` }}
+        style={{ backgroundImage: `url('/projects/indoor rainforest.jpg')` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-0"></div>
         <div className="relative z-10 text-white max-w-2xl space-y-6">

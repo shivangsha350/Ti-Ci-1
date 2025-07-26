@@ -6,7 +6,7 @@ const ContactSection = () => {
             {/* Hero section */}
             <section
                 className="relative h-[80vh] w-full flex items-center justify-start bg-cover bg-center bg-no-repeat px-6 mt-9"
-                style={{ backgroundImage: `url('/projects/2.jpg')` }}
+                style={{ backgroundImage: `url('/services/5.webp')` }}
             >
                 <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20 z-0"></div>
 
@@ -57,32 +57,22 @@ const ContactSection = () => {
                                 <div className="w-full md:w-1/2 p-6 space-y-6 text-gray-800 text-base flex flex-col justify-center">
                                     <div>
                                         <p className="font-semibold flex items-center gap-2">
-                                            <span>🕒</span> We're Open
-                                        </p>
-                                        <p className="ml-6 text-sm text-gray-600">
-                                            Monday - Saturday 09.00 - 18.00
+                                            <span>🕒</span>Mon-Sat 09.00 - 18.00
                                         </p>
                                     </div>
                                     <div>
                                         <p className="font-semibold flex items-center gap-2">
-                                            <span>📍</span> Office Location
-                                        </p>
-                                        <p className="ml-6 text-sm text-gray-600">
-                                              Santragachi, Howrah, West Bengal, India
+                                            <span>📍</span>Santragachi, Howrah, West Bengal, India
                                         </p>
                                     </div>
                                     <div>
                                         <p className="font-semibold flex items-center gap-2">
-                                            <span>📞</span> Call Us Directly
+                                            <span>📞</span>+91 83369 92968
                                         </p>
-                                        <p className="ml-6 text-sm text-gray-600"> +91 83369 92968</p>
                                     </div>
                                     <div>
                                         <p className="font-semibold flex items-center gap-2">
-                                            <span>📧</span> Send a Message
-                                        </p>
-                                        <p className="ml-6 text-sm text-gray-600">
-                                            ticinaturelab@gmail.com
+                                            <span>📧</span>ticinaturelab@gmail.com
                                         </p>
                                     </div>
                                 </div>
