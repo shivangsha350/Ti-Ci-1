@@ -34,6 +34,10 @@ const products = [
     title: "Terrarium",
     image: "/Terrarium/1.jpg",
     description: "Self-contained miniature ecosystems in beautiful glass containers."
+  },
+   { title: "Terrestrial Plants",
+    image: "/plant2.jpeg",
+    description: "Quality indoor and outdoor plants for your home and garden."
   }
 ];
 
@@ -70,28 +74,35 @@ const ProductSection = () => {
                   to="/products/vertical-garden"
                   className="inline-block bg-[#2E442F] text-white px-4 py-2 rounded-full text-sm hover:bg-[#90A48B] transition"
                 >
-                  View Gallery
+                  See Products
                 </Link>
               ) : product.title === "Nature Aquarium" ? (
                 <Link
                   to="/products/nature-aquarium"
                   className="inline-block bg-[#2E442F] text-white px-4 py-2 rounded-full text-sm hover:bg-[#90A48B] transition"
                 >
-                  View Gallery
+                  See Products
                 </Link>
               ) : product.title === "Nature Pond" ? (
                 <Link
                   to="/products/natural-pond"
                   className="inline-block bg-[#2E442F] text-white px-4 py-2 rounded-full text-sm hover:bg-[#90A48B] transition"
                 >
-                  View Gallery
+                  See Products
                 </Link>
               ) : product.title === "Terrarium" ? (
                 <Link
                   to="/products/terrarium"
                   className="inline-block bg-[#2E442F] text-white px-4 py-2 rounded-full text-sm hover:bg-[#90A48B] transition"
                 >
-                  View Gallery
+                  See Products
+                </Link>
+              ) : product.title === "Terrestrial Plants" ? (
+                <Link
+                  to="/products/terrestrialplants" 
+                  className="inline-block bg-[#2E442F] text-white px-4 py-2 rounded-full text-sm hover:bg-[#90A48B] transition"
+                >
+                  See Products
                 </Link>
               ) : (
                 <Link

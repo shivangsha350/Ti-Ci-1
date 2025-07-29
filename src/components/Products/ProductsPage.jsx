@@ -44,7 +44,7 @@ const ProductsPage = () => {
   return (
     <section className="bg-[#EEF3EC] min-h-screen py-15 px-6 mt-10">
       <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-[#2E442F]">Our Products</h1>
+        <h1 className="text-4xl font-bold text-[#2E442F] mt-4">Our Products</h1>
         <p className="text-[#2E442F]/70 mt-2 max-w-xl mx-auto text-xs">
           Browse our carefully curated gardening & aquascaping products — crafted for beauty and sustainability.
         </p>
@@ -67,6 +67,10 @@ const ProductsPage = () => {
             <div className="flex justify-center">
               {product.title === "Vertical Garden" ? (
                 <Link to="/products/vertical-garden" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
+              ) : product.title === "Tissue Cultured Aquatic Plants" ? (
+                <Link to="/products/tissue-cultured-aquatic-plants" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
+              ) : product.title === "Terrestrial Plants" ? (
+                <Link to="/products/terrestrialplants" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
               ) : product.title === "Nature Aquarium" ? (
                 <Link to="/products/nature-aquarium" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
               ) : product.title === "Nature Pond" ? (

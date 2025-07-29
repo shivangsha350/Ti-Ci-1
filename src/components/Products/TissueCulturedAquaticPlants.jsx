@@ -1,18 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion as FramerMotion } from "framer-motion";
+import StaurogyneRepens from "../../assets/Staurogyne repens.jpg";
 
 const Terrarium = () => {
   // Array of all terrarium images
   const terrariumImages = [
-    "/Terrarium/1.jpg",
-    "/Terrarium/2.jpg",
-    "/Terrarium/(3).jpg",
-    "/Terrarium/(4).jpg",
-    "/Terrarium/(5).jpg",
-    "/Terrarium/(6).jpg",
-    "/Terrarium/(7).jpg",
-    "/Terrarium/(8).jpg",
+    "/Tissue cultured aquatic plants/carpet/Eleocharis parvula (Dwarf hair grass)/eleocharis-sp-mini.jpg",
+    "/Tissue cultured aquatic plants/carpet/Hemianthus Callitrichoides _Cuba/hc cuba.jpg",
+    "/Tissue cultured aquatic plants/carpet/Monte Carlo (Micranthemum tweediei)/monte carlo.jpg",
+    "/Tissue cultured aquatic plants/Midground/ALTERNANTHERA REINECKII ‘MINI’/ALTERNANTHERAREINECKII_MINI_TISSUECULTURE_eecb3040-e846-4a03-b44c-a212cd4c4740.jpg",
+    "/Tissue cultured aquatic plants/Midground/Cryptocoryne Axelrodi/Cryptocoryne Axelrodi.jpg",
+    "/Tissue cultured aquatic plants/Midground/Cryptocoryne Pink/Cryptocoryne Pink.jpg",
+    "/Tissue cultured aquatic plants/Midground/Cryptocoryne Wendtii _Green_/Cryptocoryne Wendtii _Green_.jpg",
+    "/Tissue cultured aquatic plants/Midground/Cryptocoryne Wendtti _Brown_/Cryptocoryne Wendtti _Brown_.jpg",
   ];
 
   // Animation variants
@@ -36,16 +37,15 @@ const Terrarium = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#2E442F] mb-4">Terrarium</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2E442F] mb-4 mt-4">Tissue Cultured Aquatic Plants</h1>
           <p className="text-[#2E442F]/70 max-w-3xl mx-auto">
-            Discover the enchanting world of terrariums - self-contained miniature ecosystems in beautiful glass containers. Our carefully crafted terrariums combine selected plants, decorative elements, and balanced environments to create living art for your home or office.
-          </p>
+           Lab-grown, disease-free aquatic plants for your aquarium. </p>
         </div>
 
         {/* Featured Image */}
         <div className="mb-12">
           <img 
-            src="/Terrarium/1.jpg" 
+            src={StaurogyneRepens} 
             alt="Featured Terrarium" 
             className="w-full h-[50vh] object-cover rounded-xl shadow-lg"
           />
@@ -53,7 +53,7 @@ const Terrarium = () => {
 
         {/* Benefits Section */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Benefits of Terrariums</h2>
+          <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Benefits of Tissue Cultured Aquatic Plants</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-[#2E442F] mb-3">Low Maintenance</h3>

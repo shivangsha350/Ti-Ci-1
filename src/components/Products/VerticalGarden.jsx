@@ -40,7 +40,7 @@ const VerticalGarden = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#2E442F] mb-4">Vertical Garden</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2E442F] mb-4 mt-4">Vertical Garden</h1>
           <p className="text-[#2E442F]/70 max-w-3xl mx-auto">
             Transform any space with our stunning vertical gardens. These living walls bring nature indoors or enhance outdoor areas with lush, vibrant plant life arranged in beautiful, space-efficient designs.
           </p>

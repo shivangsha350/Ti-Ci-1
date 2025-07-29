@@ -37,7 +37,7 @@ const Terrarium = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#2E442F] mb-4">Terrarium</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2E442F] mb-4 mt-4">Terrarium</h1>
           <p className="text-[#2E442F]/70 max-w-3xl mx-auto">
             Discover the enchanting world of terrariums - self-contained miniature ecosystems in beautiful glass containers. Our carefully crafted terrariums combine selected plants, decorative elements, and balanced environments to create living art for your home or office.
           </p>
