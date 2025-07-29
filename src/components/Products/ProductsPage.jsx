@@ -1,28 +1,42 @@
 // ProductsPage.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const allProducts = [
   {
-    title: "Terrarium Kits",
-    // image: "/Product1.avif",
+    title: "Vertical Garden",
+    image: "/Vertical garden/(1).jpg",
+    description: "Beautiful living walls to transform any space with greenery."
+  },
+  {
+    title: "Tissue Cultured Aquatic Plants",
+    image: "/Ammania-Senegalensia.jpg",
+    description: "Lab-grown, disease-free aquatic plants for your aquarium."
+  },
+  {
+    title: "Terrestrial Plants",
+    image: "/plant2.jpeg",
+    description: "Quality indoor and outdoor plants for your home and garden."
+  },
+  {
+    title: "Terrarium",
     image: "/Terrarium/1.jpg",
-    description: "A complete kit for creating your own beautiful terrarium."
+    description: "Self-contained miniature ecosystems in beautiful glass containers."
   },
   {
-    title: "Tissue Culture Plants",
-    // image: "/Product2.avif",
-    image:"/Ammania-Senegalensia.jpg",
-    description: "Lab-grown healthy, vibrant tissue culture plants."
-  },
-  {
-    title: "Hydroponic Systems",
-    image: "/Nature-pond/IMG_0451.JPG",
-    description: "Eco-friendly hydroponic setups that save water & space."
-  },
-  {
-    title: "Fertilizer Packs",
+    title: "Nutrient Booster",
     image: "/Product4.avif",
-    description: "Balanced organic fertilizers to boost plant health."
+    description: "Specialized fertilizers and supplements for optimal plant growth."
+  },
+  {
+    title: "Nature Pond",
+    image: "/Nature-pond/IMG_0451.JPG",
+    description: "Create your own natural water feature with our pond solutions."
+  },
+  {
+    title: "Nature Aquarium",
+    image: "/Nature aquarium/(1).jpg",
+    description: "Complete aquascaping solutions for stunning underwater landscapes."
   }
 ];
 
@@ -36,7 +50,7 @@ const ProductsPage = () => {
         </p>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-7xl mx-auto">
         {allProducts.map((product, i) => (
           <div
             key={i}
@@ -51,19 +65,29 @@ const ProductsPage = () => {
               <p className="text-[#2E442F]/70 text-sm">{product.description}</p>
             </div>
             <div className="flex justify-center">
-              <a href="#" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</a>
+              {product.title === "Vertical Garden" ? (
+                <Link to="/products/vertical-garden" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
+              ) : product.title === "Nature Aquarium" ? (
+                <Link to="/products/nature-aquarium" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
+              ) : product.title === "Nature Pond" ? (
+                <Link to="/products/natural-pond" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
+              ) : product.title === "Terrarium" ? (
+                <Link to="/products/terrarium" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
+              ) : (
+                <a href="#" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</a>
+              )}
             </div>
           </div>
         ))}
       </div>
 
       <div className="text-center mt-12">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-block bg-[#2E442F] text-white px-6 py-3 rounded-full hover:bg-[#90A48B] transition"
         >
           ← Back to Home
-        </a>
+        </Link>
       </div>
     </section>
   );
