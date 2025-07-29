@@ -38,7 +38,7 @@ const NatureAquarium = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#2E442F] mb-4">Nature Aquarium</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2E442F] mb-4 mt-4">Nature Aquarium</h1>
           <p className="text-[#2E442F]/70 max-w-3xl mx-auto">
             Experience the beauty of underwater landscapes with our Nature Aquarium designs. These carefully crafted aquascapes combine aquatic plants, hardscape materials, and balanced ecosystems to create living art in your home or office.
           </p>

@@ -32,6 +32,7 @@ import NaturalPond from './components/Products/NaturalPond'
 import Terrarium from './components/Products/Terrarium'
 import TissueCulturedAquaticPlants from './components/Products/TissueCulturedAquaticPlants'
 import TerrestrialPlants from './components/Products/TerrestrialPlants'
+import NutrientBooster from './components/Products/NutrientBooster'
 
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
         <Route path='/products/terrarium' element={<Terrarium />} />
         <Route path='/products/tissue-cultured-aquatic-plants' element={<TissueCulturedAquaticPlants />} />
         <Route path='/products/terrestrialplants' element={<TerrestrialPlants/>} />
+        <Route path='/products/nutrient-booster' element={<NutrientBooster/>}/>
         <Route path='/blog' element={<BlogList />} />
         <Route path='/blog/:id' element={<BlogDetail />} />
         </Routes>
