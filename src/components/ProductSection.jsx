@@ -12,7 +12,7 @@ const cardVariants = {
 const products = [
   {
     title: "Vertical Garden",
-    image: "/Vertical garden/(1).jpg",
+    image: "/vertical-garden.jpg",
     description: "Beautiful living walls to transform any space with greenery."
   },
   {
@@ -22,7 +22,7 @@ const products = [
   },
   {
     title: "Nature Aquarium",
-    image: "/Nature aquarium/(1).jpg",
+    image: "/nature-aquarium.jpg",
     description: "Complete aquascaping solutions for stunning underwater landscapes."
   },
   {
