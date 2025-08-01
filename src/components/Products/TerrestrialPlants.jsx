@@ -528,24 +528,20 @@ These are native to tropical and subtropical regions. Staghorn fern is an epiphy
 
         {/* Popup Section */}
         {selectedImage && (
-          <div className="fixed inset-0 bg-transperent bg-opacity-40 backdrop-blur-sm flex items-center justify-center z-50">
-            <div className="bg-white p-6 rounded-lg max-w-md relative shadow-lg">
-              <button
-                onClick={() => setSelectedImage(null)}
-                className="absolute top-2 right-2 text-gray-600 hover:text-black"
-              >
-                ✕
-              </button>
-              <img
-                src={selectedImage.image}
-                alt={selectedImage.title}
-                className="w-full rounded mb-4"
-              />
-              <h2 className="text-xl font-semibold mb-2">{selectedImage.title}</h2>
-              <p>{selectedImage.description}</p>
-            </div>
-          </div>
-        )}
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-transperent bg-opacity-40 backdrop-blur-sm">
+    <div className="bg-white p-6 rounded-xl max-w-md w-full relative shadow-2xl">
+      <button
+        onClick={() => setSelectedImage(null)}
+        className="absolute top-2 right-2 text-gray-600 hover:text-black"
+      >
+        ✕
+      </button>
+      <img src={selectedImage.image} alt={selectedImage.title} className="w-full rounded mb-4" />
+      <h2 className="text-xl font-semibold mb-2">{selectedImage.title}</h2>
+      <p>{selectedImage.description}</p>
+    </div>
+  </div>
+)}
 
         {/* CTA Section */}
         <div className="bg-[#2E442F] text-white p-8 rounded-xl text-center">
