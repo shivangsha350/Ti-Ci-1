@@ -9,24 +9,9 @@ const allProducts = [
     description: "Beautiful living walls to transform any space with greenery."
   },
   {
-    title: "Tissue Cultured Aquatic Plants",
-    image: "/Ammania-Senegalensia.jpg",
-    description: "Lab-grown, disease-free aquatic plants for your aquarium."
-  },
-  {
-    title: "Terrestrial Plants",
-    image: "/plant2.jpeg",
-    description: "Quality indoor and outdoor plants for your home and garden."
-  },
-  {
     title: "Terrarium",
     image: "/Terrarium/1.jpg",
     description: "Self-contained miniature ecosystems in beautiful glass containers."
-  },
-  {
-    title: "Nutrient Booster",
-    image: "/Product4.avif",
-    description: "Specialized fertilizers and supplements for optimal plant growth."
   },
   {
     title: "Nature Pond",
@@ -37,6 +22,21 @@ const allProducts = [
     title: "Nature Aquarium",
     image: "nature-aquarium.jpg",
     description: "Complete aquascaping solutions for stunning underwater landscapes."
+  },
+  {
+    title: "Tissue Cultured Aquatic Plants",
+    image: "/Ammania-Senegalensia.jpg",
+    description: "Lab-grown, disease-free aquatic plants for your aquarium."
+  },
+  {
+    title: "Terrestrial Plants",
+    image: "/plant2.jpeg",
+    description: "Quality indoor and outdoor plants for your home and garden."
+  },
+  {
+    title: "Nutrient Booster",
+    image: "/Product4.avif",
+    description: "Specialized fertilizers and supplements for optimal plant growth."
   }
 ];
 

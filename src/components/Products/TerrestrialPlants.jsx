@@ -303,7 +303,7 @@ These are native to tropical and subtropical regions. Staghorn fern is an epiphy
     },
     {
       id: 11,
-      image: "public/Terrestrial plants/Fern (4 type)/wood fern2.JPG",
+      image: "/Terrestrial plants/Fern (4 type)/wood fern2.JPG",
       title: "Fern (4 type)",
       description: `It’s known for its attractive, rosette-shaped fronds resembling a bird's nest, is a resilient, low-maintenance houseplant. It thrives in warm, humid conditions and enjoys indirect sunlight.
 Tree ferns
@@ -502,7 +502,7 @@ These are native to tropical and subtropical regions. Staghorn fern is an epiphy
         </div>
 
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Gallery</h2>
+          <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Varieties</h2>
           <FramerMotion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
             variants={containerVariants}
@@ -528,7 +528,7 @@ These are native to tropical and subtropical regions. Staghorn fern is an epiphy
 
         {/* Popup Section */}
         {selectedImage && (
-          <div className="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-transperent bg-opacity-40 backdrop-blur-sm flex items-center justify-center z-50">
             <div className="bg-white p-6 rounded-lg max-w-md relative shadow-lg">
               <button
                 onClick={() => setSelectedImage(null)}

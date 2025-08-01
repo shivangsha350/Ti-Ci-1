@@ -69,9 +69,14 @@ const Navbar = () => {
             {/* Get In Touch + Menu Icons */}
             <div className="flex items-center space-x-3 md:space-x-2">
               {/* Get In Touch */}
-              <button className="hidden md:block border px-4 py-2 rounded-full text-white hover:bg-[#4e5a49] transition-colors font-semibold">
-                Apply for Program
-              </button>
+              <a
+  href="https://forms.gle/JW3R5DR6azrp57da6"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden md:block border px-4 py-2 rounded-full text-white hover:bg-[#4e5a49] transition-colors font-semibold"
+>
+  Apply for Program
+</a>
 
               {/* Menu Icon — shown on all screen sizes */}
               <button onClick={() => setIsSidebarOpen(true)} className="text-white">

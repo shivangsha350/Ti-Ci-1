@@ -133,7 +133,7 @@ const Terrarium = () => {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Gallery</h2>
+          <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Varieties</h2>
           <FramerMotion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
             variants={containerVariants}

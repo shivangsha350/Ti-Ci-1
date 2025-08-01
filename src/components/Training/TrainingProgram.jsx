@@ -61,7 +61,7 @@ const TrainingProgram = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h1 className="text-3xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-[#A8C1A2] to-[#EEF3EC] bg-clip-text text-transparent">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4 mt-5 bg-gradient-to-r from-[#A8C1A2] to-[#EEF3EC] bg-clip-text text-transparent">
             TiCi’s 3-Month Intensive Training Program
           </h1>
           <p className="text-[#EEF3EC]/90 text-base sm:text-lg max-w-3xl mx-auto">
@@ -136,11 +136,13 @@ const TrainingProgram = () => {
           className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-6"
         >
           <a
-            href="/apply"
-            className="bg-[#90A48B] text-[#2E442F] font-semibold px-8 py-3 rounded-full hover:bg-white transition-colors shadow-lg"
-          >
-             Apply Now
-          </a>
+  href="https://forms.gle/JW3R5DR6azrp57da6"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#90A48B] text-[#2E442F] font-semibold px-8 py-3 rounded-full hover:bg-white transition-colors shadow-lg"
+>
+  Apply Now
+</a>
           <Link
             to="/"
             className="border border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-[#2E442F] transition-colors"
