@@ -84,7 +84,7 @@ const Hero = () => {
       {/* Text Content */}
       <div className="relative z-10 text-white max-w-3xl space-y-6 mt-16 md:mt-0">
         <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-          Welcome to TiCi Nature Lab
+          Welcome to TiCi NatureLab
         </h1>
         <p className="text-base md:text-lg max-w-xl opacity-90">
           TiCi transforms everyday spaces into immersive ecosystems by blending biology, design, and care to reshape how we live with nature. 
