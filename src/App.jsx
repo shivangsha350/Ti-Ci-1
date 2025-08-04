@@ -31,8 +31,8 @@ import VerticalGardenDetails from './components/Products/VerticalGardenDetails'
 import NatureAquarium from './components/Products/NatureAquarium'
 import NaturalPond from './components/Products/NaturalPond'
 import Terrarium from './components/Products/Terrarium'
-import TissueCulturedAquaticPlants from './components/Products/TissueCulturedAquaticPlants'
-import TissueCulturedAquaticPlantsDetails from './components/Products/TissueCulturedAquaticPlantsDetails'
+import TissueCulturedAquaticPlants from './components/Products/TissueCulturedAquaticPlants/TissueCulturedAquaticPlants'
+import TissueCulturedAquaticPlantsDetails from './components/Products/TissueCulturedAquaticPlants/TissueCulturedAquaticPlantsDetails'
 import TerrestrialPlants from './components/Products/TerrestrialPlants'
 import NutrientBooster from './components/Products/NutrientBooster'
 
@@ -73,8 +73,8 @@ function App() {
         <Route path='/products/nature-aquarium' element={<NatureAquarium />} />
         <Route path='/products/natural-pond' element={<NaturalPond />} />
         <Route path='/products/terrarium' element={<Terrarium />} />
-        <Route path='/products/tissue-cultured-aquatic-plants' element={<TissueCulturedAquaticPlants />} />
-        <Route path='/products/tissue-cultured-aquatic-plants/:id' element={<TissueCulturedAquaticPlantsDetails />} />
+        <Route path='/products/tissue-cultured-aquatic-plants/tissue-cultured-aquatic-plants' element={<TissueCulturedAquaticPlants/>}/>
+        <Route path='/products/tissue-cultured-aquatic-plants/tissue-cultured-aquatic-plants/:id' element={<TissueCulturedAquaticPlantsDetails />} />
         <Route path='/products/terrestrialplants' element={<TerrestrialPlants/>} />
         
         <Route path='/products/nutrient-booster' element={<NutrientBooster/>}/>

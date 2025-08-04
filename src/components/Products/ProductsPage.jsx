@@ -68,7 +68,7 @@ const ProductsPage = () => {
               {product.title === "Vertical Garden" ? (
                 <Link to="/products/vertical-garden" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
               ) : product.title === "Tissue Cultured Aquatic Plants" ? (
-                <Link to="/products/tissue-cultured-aquatic-plants" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
+                <Link to="/products/tissue-cultured-aquatic-plants/tissue-cultured-aquatic-plants" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
               ) : product.title === "Terrestrial Plants" ? (
                 <Link to="/products/terrestrialplants" className="bg-[#2E442F] text-white px-3 py-2 mb-5 rounded-full text-sm hover:bg-[#90A48B] transition">See more</Link>
               ) : product.title === "Nutrient Booster" ? (
