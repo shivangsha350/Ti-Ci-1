@@ -53,7 +53,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center px-2 py-1 max-w-7xl mx-auto">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2 text-xl font-bold text-white">
-              <img src="/public/TiCi NatureLab Logo (black).jpg" alt="TiCi" className="rounded-xl h-13 w-14 ml-8 mt-0"/>
+              <img src="/TiCi NatureLab Logo (black).jpg" alt="TiCi" className="rounded-xl h-13 w-14 ml-8 mt-0"/>
               {/* <span>TiCi</span> */}
             </Link>
 
@@ -95,7 +95,7 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center mb-6 border-b border-white/20 pb-4">
           <div className="flex items-center space-x-2 text-xl font-bold">
-            <img src="/public/TiCi NatureLab Logo (black).jpg" alt="TiCi" className="h-7 w-7 rounded-md" />
+            <img src="/TiCi NatureLab Logo (black).jpg" alt="TiCi" className="h-7 w-7 rounded-md" />
             <span>TiCi</span>
           </div>
           <button onClick={() => setIsSidebarOpen(false)}>
