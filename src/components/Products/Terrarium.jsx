@@ -96,6 +96,16 @@ const Terrarium = () => {
           </FramerMotion.div>
         </div>
 
+        {/* back button */}
+              <div className="text-center mt-12">
+                <Link
+                  to="/products"
+                  className="inline-block bg-[#2E442F] text-white px-6 py-3 rounded-full hover:bg-[#90A48B] transition"
+                >
+                  ← Back to Products
+                </Link>
+              </div>
+
         {/* Features Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Features</h2>

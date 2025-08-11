@@ -33,8 +33,15 @@ import NaturalPond from './components/Products/NaturalPond'
 import Terrarium from './components/Products/Terrarium'
 import TissueCulturedAquaticPlants from './components/Products/TissueCulturedAquaticPlants/TissueCulturedAquaticPlants'
 import TissueCulturedAquaticPlantsDetails from './components/Products/TissueCulturedAquaticPlants/TissueCulturedAquaticPlantsDetails'
-import TerrestrialPlants from './components/Products/TerrestrialPlants'
-import NutrientBooster from './components/Products/NutrientBooster'
+import TerrestrialPlants from './components/Products/Terrestrial_plants/TerrestrialPlants'
+import PlantCategoryPage from './components/Products/Terrestrial_plants/PlantCategoryPage';
+import NutrientBooster from './components/Products/Nutrient Booster/NutrientBooster'
+import CategoryPage from './components/Products/Nutrient Booster/CategoryPage'
+import CarpetPlants from './components/Products/TissueCulturedAquaticPlants/CarpetPlants';
+import MidgroundPlants from './components/Products/TissueCulturedAquaticPlants/MidgroundPlants';
+import StemPlants from './components/Products/TissueCulturedAquaticPlants/StemPlants';
+
+
 
 
 
@@ -76,8 +83,15 @@ function App() {
         <Route path='/products/tissue-cultured-aquatic-plants/tissue-cultured-aquatic-plants' element={<TissueCulturedAquaticPlants/>}/>
         <Route path='/products/tissue-cultured-aquatic-plants/tissue-cultured-aquatic-plants/:id' element={<TissueCulturedAquaticPlantsDetails />} />
         <Route path='/products/terrestrialplants' element={<TerrestrialPlants/>} />
+        <Route path='/products/terrestrialplants/:sectionId' element={<PlantCategoryPage />} />
+       <Route path='/products/tissue-cultured-aquatic-plants/carpet' element={<CarpetPlants />} />
+<Route path='/products/tissue-cultured-aquatic-plants/midground' element={<MidgroundPlants />} />
+<Route path='/products/tissue-cultured-aquatic-plants/stem' element={<StemPlants />} />
+
+
         
         <Route path='/products/nutrient-booster' element={<NutrientBooster/>}/>
+         <Route path="/nutrient-booster/:categoryId" element={<CategoryPage />} />
         <Route path='/blog' element={<BlogList />} />
         <Route path='/blog/:id' element={<BlogDetail />} />
         </Routes>

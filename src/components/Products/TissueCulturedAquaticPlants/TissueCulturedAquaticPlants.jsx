@@ -262,196 +262,34 @@
 
 
 
-import React, { useState } from "react";
-import { motion as FramerMotion } from "framer-motion";
-
-const carpetImages = [
-  {
-    image: "/Tissue cultured aquatic plants/carpet/Eleocharis parvula (Dwarf hair grass)/eleocharis-sp-mini.jpg",
-    title: "Eleocharis parvula (Dwarf hair grass)",
-    description:
-      "Widely distributed across North America, Europe, and parts of Asia. Forms dense, grass-like mats and is often used in aquascapes."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/carpet/Hemianthus Callitrichoides _Cuba/hc cuba.jpg",
-    title: "Hemianthus Callitrichoides 'Cuba'",
-    description:
-      "Native to Cuba. Tiny, bright green leaves grow as a lush carpet."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/carpet/Monte Carlo (Micranthemum tweediei)/monte carlo.jpg",
-    title: "Monte Carlo (Micranthemum Tweediei)",
-    description:
-      "Native to Argentina. Small round leaves and fast-spreading."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/carpet/UTRICULARIA GRAMMINIFOLIA/utricularia-graminifolia.jpg",
-    title: "Utricularia Graminifolia",
-    description:
-      "Delicate carpeting plant with grass-like appearance."
-  }
-];
-
-const midgroundImages = [
-  {
-    image: "/Tissue cultured aquatic plants/Midground/ALTERNANTHERA REINECKII ‘MINI’/ALTERNANTHERAREINECKII_MINI_TISSUECULTURE_eecb3040-e846-4a03-b44c-a212cd4c4740.jpg",
-    title: "Alternanthera Reineckii 'Mini'",
-    description: "Small, vibrant red plant perfect for midgrounds."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/Midground/Cryptocoryne Axelrodi/Cryptocoryne Axelrodi.jpg",
-    title: "Cryptocoryne Axelrodi",
-    description: "Striking reddish-green leaves from Sri Lanka."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/Midground/Cryptocoryne Pink/Cryptocoryne Pink.jpg",
-    title: "Cryptocoryne Pink",
-    description: "Attractive pinkish hue, great for contrast."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/Midground/Cryptocoryne Wendtii _Green_/Cryptocoryne Wendtii _Green_.jpg",
-    title: "Cryptocoryne Wendtii 'Green'",
-    description: "Hardy green rosette plant."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/Midground/Cryptocoryne Wendtti _Brown_/Cryptocoryne Wendtti _Brown_.jpg",
-    title: "Cryptocoryne Wendtii 'Brown'",
-    description: "Brown crinkled leaves for earthy tone."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/Midground/Lobelia Cardinalis/Lobelia Cardinalis.jpg",
-    title: "Lobelia Cardinalis",
-    description: "Bright green to reddish plant with bold shape."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/Midground/Pogostemon helferi/Pogostemon helferi.jpg",
-    title: "Pogostemon helferi",
-    description: "Unique curly leaf plant from Thailand."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/Midground/Staurogyne repens/Staurogyne repens.jpg",
-    title: "Staurogyne repens",
-    description: "Compact, green foliage, easy to maintain."
-  }
-];
-
-const stemImages = [
-  {
-    image: "/Tissue cultured aquatic plants/stem plant/Ammania-Senegalensia/Ammania-Senegalensia.jpg",
-    title: "Ammania Senegalensia",
-    description: "West African red to bronze stem plant."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/stem plant/LIMNOPHILA AROMATICA PURPLE/LIMNOPHILA AROMATICA PURPLE.jpg",
-    title: "Limnophila Aromatica Purple",
-    description: "Purple-tinted aromatic plant from SE Asia."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/stem plant/MYRIOPHYLLUM  mattogrossense/MYRIOPHYLLUM mattogrossense.jpg",
-    title: "Myriophyllum",
-    description: "Feathery textured fast grower."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/stem plant/Rotala Blood Red/Rotala Blood Red.jpeg",
-    title: "Rotala Blood Red",
-    description: "Intensely red stem plant with upright growth."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/stem plant/ROTALA H’RA/ROTALA H’RA.jpg",
-    title: "Rotala H’ra",
-    description: "Reddish-orange arching stem plant."
-  },
-  {
-    image: "/Tissue cultured aquatic plants/stem plant/Rotala sp. Bangladesh/Rotala sp. Bangladesh.jpg",
-    title: "Rotala sp. Bangladesh",
-    description: "Delicate leaves with green-pink transition."
-  }
-];
-
-
-
-const GalleryModal = ({ items, onClose }) => (
-
-  
-  
-  <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50">
-
-    
-    <div className="bg-white p-6 rounded-xl max-w-3xl w-full relative shadow-2xl overflow-y-auto max-h-[90vh]">
-      <button
-        onClick={onClose}
-        className="absolute top-2 right-2 text-gray-600 hover:text-black text-2xl"
-      >
-        ✕
-      </button>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {items.map((item, idx) => (
-          <div key={idx} className="bg-white rounded-md">
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-40 object-cover rounded-md"
-            />
-            <h2 className="text-lg font-bold mt-2 text-gray-800">{item.title}</h2>
-            <p className="text-sm text-gray-600">{item.description}</p>
-          </div>
-        ))}
-
-        
-      </div>
-    </div>
-  </div>
-);
-
-
+// src/pages/TissueCulturedAquaticPlants.jsx
+import React from "react";
+import { Link } from "react-router-dom";
 
 const TissueCulturedAquaticPlants = () => {
-  const [activeGallery, setActiveGallery] = useState(null);
-
-  const cards = [
-    { title: "Carpet", image: carpetImages[0].image, data: carpetImages },
-    { title: "Midground", image: midgroundImages[0].image, data: midgroundImages },
-    { title: "Stem Plant", image: stemImages[0].image, data: stemImages }
+  const categories = [
+    {
+      title: "Carpet Plants",
+      image:
+        "/Tissue cultured aquatic plants/carpet/Eleocharis parvula (Dwarf hair grass)/eleocharis-sp-mini.jpg",
+      path: "/products/tissue-cultured-aquatic-plants/carpet"
+    },
+    {
+      title: "Midground Plants",
+      image:
+        "/Tissue cultured aquatic plants/Midground/Staurogyne repens/Staurogyne repens.jpg",
+      path: "/products/tissue-cultured-aquatic-plants/midground"
+    },
+    {
+      title: "Stem Plants",
+      image:
+        "/Tissue%20cultured%20aquatic%20plants/stem%20plant/Ammania-Senegalensia/Ammania-Senegalensia.jpg",
+      path: "/products/tissue-cultured-aquatic-plants/stem"
+    }
   ];
 
   return (
     <section className="bg-[#EEF3EC] min-h-screen py-16 px-6 mt-10">
-
-
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#2E442F] mb-4 mt-4">Tissue Cultured Aquatic Plants</h1>
-          
-        </div>
-
-        {/* Featured Image */}
-        <div className="mb-12">
-          <img
-            src="/Tissue cultured aquatic plants/Midground/Staurogyne repens/Staurogyne repens.jpg"
-            alt="Featured Tissue Cultured Aquatic Plants"
-            className="w-full h-[50vh] object-cover rounded-xl shadow-lg"
-          />
-        </div>
-
-        {/* Benefits Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Tissue Cultured Aquatic Plants</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {["Space Optimization", "Improved Air Quality", "Aesthetic Appeal"].map((title, i) => (
-              <div key={i} className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-[#2E442F] mb-3">{title}</h3>
-                <p className="text-[#2E442F]/70">
-                  {title === "Space Optimization" && "Perfect for urban environments where ground space is limited. Grow upward instead of outward."}
-                  {title === "Improved Air Quality" && "Plants naturally filter air pollutants, creating healthier indoor and outdoor environments."}
-                  {title === "Aesthetic Appeal" && "Create stunning visual focal points that transform ordinary walls into living art installations."}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>  
-      </div>
-
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-[#2E442F] mb-4 mt-4">
@@ -463,82 +301,27 @@ const TissueCulturedAquaticPlants = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-16">
-          {cards.map((card, index) => (
-            <div
+          {categories.map((card, index) => (
+            <Link
               key={index}
-              onClick={() => setActiveGallery(card.data)}
-              className="bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow"
+              to={card.path}
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow block"
             >
               <img
                 src={card.image}
                 alt={card.title}
                 className="w-full h-48 object-cover rounded-md mb-4"
               />
-              <h3 className="text-xl font-semibold text-[#2E442F] mb-2">{card.title}</h3>
+              <h3 className="text-xl font-semibold text-[#2E442F] mb-2">
+                {card.title}
+              </h3>
               <p className="text-[#2E442F]/70">Click to view plant varieties</p>
-            </div>
+            </Link>
           ))}
         </div>
-
-        {activeGallery && (
-          <GalleryModal items={activeGallery} onClose={() => setActiveGallery(null)} />
-        )}
       </div>
-
-       {/* Features Section */}
-        <div className="mb-16 mt-16">
-          <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Features</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              ["Custom Design", "Each vertical garden is custom designed to fit your space and aesthetic preferences."],
-              ["Integrated Irrigation", "Built-in irrigation systems ensure plants receive optimal water with minimal maintenance."],
-              ["Plant Selection", "Carefully selected plants that thrive in vertical environments and complement each other."],
-              ["Maintenance Support", "Professional maintenance services available to ensure your vertical garden thrives year-round."]
-            ].map(([title, desc], i) => (
-              <div key={i} className="flex items-start gap-4">
-                <div className="bg-[#2E442F] text-white p-3 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-[#2E442F] mb-2">{title}</h3>
-                  <p className="text-[#2E442F]/70">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="bg-[#2E442F] text-white p-8 rounded-xl text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Space?</h2>
-          <p className="mb-6 max-w-2xl mx-auto">
-            Contact us today to discuss your vertical garden project. Our experts will help you create a stunning living wall tailored to your needs.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="/contact"
-              className="bg-white text-[#2E442F] px-6 py-3 rounded-full font-semibold hover:bg-[#90A48B] hover:text-white transition duration-300"
-            >
-              Contact Us
-            </a>
-            <a
-              href="/products"
-              className="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#2E442F] transition duration-300"
-            >
-              View All Products
-            </a>
-          </div>
-        </div>
     </section>
-    
   );
-  
 };
 
-
-
 export default TissueCulturedAquaticPlants;
-
-
