@@ -84,11 +84,7 @@ const subcategoriesData = {
     {
       image: "/Nutrient booster/Liquid fertilizer & water conditioner/grenoculum/grenoculum.JPEG.jpg",
       title: "Greenoculum",
-<<<<<<< HEAD
-      description: "GreenOculum – Cultivating Nature’s Finest",
-=======
-      description: "The vitimate sollutants enriched with probiotics and calcium to revoulutionize and your experinces",
->>>>>>> f25a7f7d41bc0c3ecfe507ec40c1fbb23cbac72d
+      description: "Greenoculum – Cultivating Nature’s Finest",
     },
     {
       image: "/Nutrient booster/Liquid fertilizer & water conditioner/Soil additives/Soil_Addictives.JPEG.jpg",
