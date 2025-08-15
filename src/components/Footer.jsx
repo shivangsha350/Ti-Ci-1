@@ -137,7 +137,7 @@ const Footer = () => {
               <div>
               <div className="flex items-center space-x-2 mb-3">
                 <Contact className="w-5 h-5 text-green-400" />
-                <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">+91 8336992968</span>
+                <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">+91 9903243299</span>
               </div>
             </div>
           </div>

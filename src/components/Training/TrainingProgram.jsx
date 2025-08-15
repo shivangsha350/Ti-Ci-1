@@ -35,11 +35,10 @@ const TrainingProgram = () => {
 "Students or graduates in Biology, Botany, Biotechnology (for lab roles)",
 "Creative minds interested in aquascaping, eco-decor, or nature-inspired design",
 "Anyone (10+2 or above) with a hands-on passion for gardening, fishkeeping, or green living",
-"Location : Santragachi, West Bengal",
   ];
 
   const benefits = [
-"₹15,000 stipend on successful completion",
+"₹5,000 stipend on successful completion",
 "Free meals and accommodation during the program",
 "Certification plus career support in labs, nurseries, design studios & more",
   ];
