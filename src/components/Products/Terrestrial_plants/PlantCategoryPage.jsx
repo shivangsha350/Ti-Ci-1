@@ -17,11 +17,9 @@ const imagesDataByCategory = {
   "Aglaonema": [
     {
       image: "/Terrestrial plants/Aglonema sp/_DSC5963.JPG",
-<<<<<<< HEAD
+
       title: "Aglaonema",
-=======
-      title: "Aglaonema sp",
->>>>>>> f25a7f7d41bc0c3ecfe507ec40c1fbb23cbac72d
+
       description: "Beautiful Aglonema with variegated leaves, perfect for indoor spaces.",
     },
   ],
@@ -458,11 +456,10 @@ const featuredImageByCategory = {
 
 
 const benefitsByCategory = {
-<<<<<<< HEAD
+
   "Aglaonema": [
-=======
-  "Aglaonema sp": [
->>>>>>> f25a7f7d41bc0c3ecfe507ec40c1fbb23cbac72d
+
+  
     {
       title: "Low Maintenance",
       description: "Aglaonema plants require minimal care and thrive indoors.",

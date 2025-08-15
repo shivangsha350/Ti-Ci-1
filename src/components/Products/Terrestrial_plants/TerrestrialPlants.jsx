@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> f25a7f7d41bc0c3ecfe507ec40c1fbb23cbac72d
-
 import { Link } from 'react-router-dom';
 
 const plantSections = [
