@@ -35,7 +35,7 @@ const allProducts = [
   },
   {
     title: "Nutrient Booster",
-    image: "/Product4.avif",
+    image: "/All_in_one_Non_CO2.JPEG.jpg",
     description: "Specialized fertilizers and supplements for optimal plant growth."
   }
 ];

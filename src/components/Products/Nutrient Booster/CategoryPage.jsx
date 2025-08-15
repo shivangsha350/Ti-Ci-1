@@ -83,8 +83,8 @@ const subcategoriesData = {
     },
     {
       image: "/Nutrient booster/Liquid fertilizer & water conditioner/grenoculum/grenoculum.JPEG.jpg",
-      title: "grenoculum",
-      description: "",
+      title: "Greenoculum",
+      description: "GreenOculum – Cultivating Nature’s Finest",
     },
     {
       image: "/Nutrient booster/Liquid fertilizer & water conditioner/Soil additives/Soil_Addictives.JPEG.jpg",

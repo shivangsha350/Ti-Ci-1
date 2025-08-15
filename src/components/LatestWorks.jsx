@@ -147,7 +147,7 @@ const cardData = [
   {
     id: 1,
     name: "Garden Beauty",
-    location: "California",
+    location: "Kanpur, Uttar Pradesh",
     image:
       "https://media.istockphoto.com/id/1414023501/photo/beautiful-ornamental-garden.jpg?b=1&s=612x612&w=0&k=20&c=o-6cTBDYGcWdQdAysGNUA14pJJKJjHCUTg8FY6fFK70=",
     description:
@@ -156,7 +156,7 @@ const cardData = [
   {
     id: 2,
     name: "Garden Beauty",
-    location: "California",
+    location: "Barbil, Orissa",
     image: "https://images.pexels.com/photos/955656/pexels-photo-955656.jpeg",
     description:
       "Discover serenity with elegant landscaping that connects nature and architecture seamlessly.",

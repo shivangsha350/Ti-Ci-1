@@ -137,10 +137,10 @@ const MidgroundPlants = () => {
           <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Features</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              ["Custom Design", "Each vertical garden is custom designed to fit your space and aesthetic preferences."],
-              ["Integrated Irrigation", "Built-in irrigation systems ensure plants receive optimal water with minimal maintenance."],
-              ["Plant Selection", "Carefully selected plants that thrive in vertical environments and complement each other."],
-              ["Maintenance Support", "Professional maintenance services available to ensure your vertical garden thrives year-round."]
+              ["Balanced Design", "Perfect for filling the space between foreground and background plants."],
+  ["Varied Heights", "Offers diverse leaf shapes and sizes to create natural layers."],
+  ["Hardy Growth", "Adaptable to a range of water conditions for long-lasting beauty."],
+  ["Visual Transition", "Smoothly blends the carpet and tall plants for a harmonious aquascape."]
             ].map(([title, desc], i) => (
               <div key={i} className="flex items-start gap-4">
                 <div className="bg-[#2E442F] text-white p-3 rounded-full">

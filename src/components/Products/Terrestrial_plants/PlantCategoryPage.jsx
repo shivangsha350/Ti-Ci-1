@@ -688,10 +688,10 @@ const itemVariants = {
 
 // Example data with titles & descriptions added per image
 const imagesDataByCategory = {
-  "Aglonema sp": [
+  "Aglaonema": [
     {
       image: "/Terrestrial plants/Aglonema sp/_DSC5963.JPG",
-      title: "Aglonema sp",
+      title: "Aglaonema",
       description: "Beautiful Aglonema with variegated leaves, perfect for indoor spaces.",
     },
   ],
@@ -709,148 +709,148 @@ const imagesDataByCategory = {
       description: "Elegant Anthurium with glossy leaves and vibrant red flowers.",
     },
   ],
-  Bigonia: [
+  Begonia: [
     {
       image: "/Terrestrial plants/Bigonia/_DSC5808.JPG",
-      title: "Bigonia 1",
-      description: "Bigonia climbing plant with lush green foliage.",
+      title: "Begonia 1",
+      description: "Begonia climbing plant with lush green foliage.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC5809.JPG",
-      title: "Bigonia 2",
-      description: "Beautiful Bigonia flowers blooming in sunlight.",
+      title: "Begonia 2",
+      description: "Beautiful Begonia flowers blooming in sunlight.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC5814.JPG",
-      title: "Bigonia 3",
-      description: "Bigonia vines in full growth on garden trellis.",
+      title: "Begonia 3",
+      description: "Begonia vines in full growth on garden trellis.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6039.JPG",
-      title: "Bigonia 4",
-      description: "Close-up of Bigonia flowers with rich colors.",
+      title: "Begonia 4",
+      description: "Close-up of Begonia flowers with rich colors.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6044.JPG",
-      title: "Bigonia 5",
-      description: "Bigonia's dense foliage creating natural shade.",
+      title: "Begonia 5",
+      description: "Begonia's dense foliage creating natural shade.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6045.JPG",
-      title: "Bigonia 6",
-      description: "Bigonia flowers attract pollinators with vibrant colors.",
+      title: "Begonia 6",
+      description: "Begonia flowers attract pollinators with vibrant colors.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6047.JPG",
-      title: "Bigonia 7",
-      description: "Bigonia plant wrapping around fence posts.",
+      title: "Begonia 7",
+      description: "Begonia plant wrapping around fence posts.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6052.JPG",
-      title: "Bigonia 8",
-      description: "Garden with flourishing Bigonia vines in summer.",
+      title: "Begonia 8",
+      description: "Garden with flourishing Begonia vines in summer.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6054.JPG",
-      title: "Bigonia 9",
-      description: "Bigonia flowers close-up with dew drops.",
+      title: "Begonia 9",
+      description: "Begonia flowers close-up with dew drops.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6056.JPG",
-      title: "Bigonia 10",
-      description: "Bigonia plant thriving in natural light.",
+      title: "Begonia 10",
+      description: "Begonia plant thriving in natural light.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6057.JPG",
-      title: "Bigonia 11",
-      description: "Lush green Bigonia leaves providing ground cover.",
+      title: "Begonia 11",
+      description: "Lush green Begonia leaves providing ground cover.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6058.JPG",
-      title: "Bigonia 12",
-      description: "Bigonia's bright flowers brighten any garden corner.",
+      title: "Begonia 12",
+      description: "Begonia's bright flowers brighten any garden corner.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6059.JPG",
-      title: "Bigonia 13",
-      description: "Bigonia vines climbing upwards towards sunlight.",
+      title: "Begonia 13",
+      description: "Begonia vines climbing upwards towards sunlight.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6064.JPG",
-      title: "Bigonia 14",
-      description: "Bigonia in full bloom surrounded by greenery.",
+      title: "Begonia 14",
+      description: "Begonia in full bloom surrounded by greenery.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6066.JPG",
-      title: "Bigonia 15",
-      description: "Bigonia's dense foliage offers natural privacy.",
+      title: "Begonia 15",
+      description: "Begonia's dense foliage offers natural privacy.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6071.JPG",
-      title: "Bigonia 16",
-      description: "Vibrant Bigonia flowers with sunlight shining through.",
+      title: "Begonia 16",
+      description: "Vibrant Begonia flowers with sunlight shining through.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6072.JPG",
-      title: "Bigonia 17",
-      description: "Bigonia growing along garden pathway.",
+      title: "Begonia 17",
+      description: "Begonia growing along garden pathway.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6073.JPG",
-      title: "Bigonia 18",
-      description: "Bigonia's colorful blooms attract butterflies.",
+      title: "Begonia 18",
+      description: "Begonia's colorful blooms attract butterflies.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6095.JPG",
-      title: "Bigonia 19",
-      description: "Bigonia vines wrapping a trellis in the morning light.",
+      title: "Begonia 19",
+      description: "Begonia vines wrapping a trellis in the morning light.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6097.JPG",
-      title: "Bigonia 20",
-      description: "Close-up of Bigonia flowers' intricate patterns.",
+      title: "Begonia 20",
+      description: "Close-up of Begonia flowers' intricate patterns.",
     },
     {
       image: "/Terrestrial plants/Bigonia/_DSC6098.JPG",
-      title: "Bigonia 21",
-      description: "Bigonia leaves catching soft rain droplets.",
+      title: "Begonia 21",
+      description: "Begonia leaves catching soft rain droplets.",
     },
   ],
-  Bromelliad: [
+  Bromeliad: [
     {
       image: "/Terrestrial plants/Bromelliad/_DSC5898.JPG",
-      title: "Bromelliad 1",
+      title: "Bromeliad 1",
       description: "Tropical Bromelliad with vibrant colors and unique shape.",
     },
     {
       image: "/Terrestrial plants/Bromelliad/_DSC5901.JPG",
-      title: "Bromelliad 2",
-      description: "Bromelliad thriving in moist, shaded environments.",
+      title: "Bromeliad 2",
+      description: "Bromeliad thriving in moist, shaded environments.",
     },
     {
       image: "/Terrestrial plants/Bromelliad/IMG-20250611-WA0005.jpg",
-      title: "Bromelliad 3",
-      description: "Close-up of bromelliad flowers with striking colors.",
+      title: "Bromeliad 3",
+      description: "Close-up of bromeliad flowers with striking colors.",
     },
     {
       image: "/Terrestrial plants/Bromelliad/IMG-20250611-WA0006.jpg",
-      title: "Bromelliad 4",
-      description: "Bromelliad leaves forming a natural water reservoir.",
+      title: "Bromeliad 4",
+      description: "Bromeliad leaves forming a natural water reservoir.",
     },
     {
       image: "/Terrestrial plants/Bromelliad/IMG-20250611-WA0008.jpg",
-      title: "Bromelliad 5",
-      description: "Bromelliad displaying its unique rosette leaf arrangement.",
+      title: "Bromeliad 5",
+      description: "Bromeliad displaying its unique rosette leaf arrangement.",
     },
     {
       image: "/Terrestrial plants/Bromelliad/IMG-20250611-WA0010.jpg",
-      title: "Bromelliad 6",
-      description: "Colorful bromelliad flower blooming vibrantly.",
+      title: "Bromeliad 6",
+      description: "Colorful bromeliad flower blooming vibrantly.",
     },
     {
       image: "/Terrestrial plants/Bromelliad/WhatsApp Image 2025-07-01 at 16.17.00_7456e296.jpg",
-      title: "Bromelliad 7",
-      description: "Bromelliad adding exotic flair to the garden.",
+      title: "Bromeliad 7",
+      description: "Bromeliad adding exotic flair to the garden.",
     },
   ],
   "Coin plant": [
@@ -1096,11 +1096,11 @@ const imagesDataByCategory = {
 };
 
 const featuredImageByCategory = {
-  "Aglonema sp": "/Terrestrial plants/Aglonema sp/_DSC5963.JPG",
+  "Aglaonema": "/Terrestrial plants/Aglonema sp/_DSC5963.JPG",
   Alocasia: "/Terrestrial plants/Alocasia/_DSC5806.JPG",
   Anthurium: "/Terrestrial plants/Anthurium/IMG_0413.JPG",
-  Bigonia: "/Terrestrial plants/Bigonia/_DSC5808.JPG",
-  Bromelliad: "/Terrestrial plants/Bromelliad/_DSC5898.JPG",
+  Begonia: "/Terrestrial plants/Bigonia/_DSC5808.JPG",
+  Bromeliad: "/Terrestrial plants/Bromelliad/_DSC5898.JPG",
    "Coin plant": "/Terrestrial plants/Coin plant/_DSC6010.JPG",
   Coleus: "/Terrestrial plants/Coleus/_DSC5840.JPG",
   "Dieffenbachia sterling": "/Terrestrial plants/Dieffenbachia sterling/_DSC5915.JPG",
@@ -1128,10 +1128,10 @@ const featuredImageByCategory = {
 
 
 const benefitsByCategory = {
-  "Aglonema sp": [
+  "Aglaonema": [
     {
       title: "Low Maintenance",
-      description: "Aglonema plants require minimal care and thrive indoors.",
+      description: "Aglaonema plants require minimal care and thrive indoors.",
     },
     {
       title: "Air Purifying",
@@ -1170,10 +1170,10 @@ const benefitsByCategory = {
       description: "Requires moderate watering and indirect sunlight.",
     },
   ],
-  Bigonia: [
+  Begonia: [
     {
       title: "Fast Growing",
-      description: "Bigonia grows quickly, perfect for fast landscaping.",
+      description: "Begonia grows quickly, perfect for fast landscaping.",
     },
     {
       title: "Vibrant Flowers",
@@ -1184,7 +1184,7 @@ const benefitsByCategory = {
       description: "Great for trellises and vertical garden designs.",
     },
   ],
-  Bromelliad: [
+  Bromeliad: [
     {
       title: "Unique Appearance",
       description: "Striking foliage and bright inflorescences create eye-catching displays.",
@@ -1494,6 +1494,7 @@ export default function PlantCategoryPage() {
   if (!imagesData.length) {
     return (
       <div className="text-center py-20 text-red-500">Category not found.</div>
+      
     );
   }
 
@@ -1519,28 +1520,30 @@ export default function PlantCategoryPage() {
     ];
 
   const features = [
-    [
-      "Custom Design",
-      "Each vertical garden is custom designed to fit your space and aesthetic preferences.",
-    ],
-    [
-      "Integrated Irrigation",
-      "Built-in irrigation systems ensure plants receive optimal water with minimal maintenance.",
-    ],
-    [
-      "Plant Selection",
-      "Carefully selected plants that thrive in vertical environments and complement each other.",
-    ],
-    [
-      "Maintenance Support",
-      "Professional maintenance services available to ensure your vertical garden thrives year-round.",
-    ],
-  ];
+  [
+    "Wide Variety",
+    "Choose from a diverse range of terrestrial plants suitable for homes, offices, and gardens.",
+  ],
+  [
+    "Expert Care Guidance",
+    "Get detailed care instructions to ensure your plants stay healthy and vibrant.",
+  ],
+  [
+    "Sustainable Sourcing",
+    "All plants are ethically sourced to promote environmental responsibility.",
+  ],
+  [
+    "Decor & Aesthetics",
+    "Beautiful plant arrangements to enhance the look and feel of your indoor or outdoor space.",
+  ],
+];
+
 
   const cta = {
-    title: "Ready to Transform Your Space?",
-    description:
-      "Contact us today to discuss your vertical garden project. Our experts will help you create a stunning living wall tailored to your needs.",
+     title: "Bring Nature Closer to You",
+  description:
+    "Explore our collection of terrestrial plants and find the perfect addition to your space. Our team will guide you in selecting and caring for plants that suit your environment.",
+  
     buttons: [
       { text: "Contact Us", href: "/contact", isPrimary: true },
       { text: "View All Products", href: "/products", isPrimary: false },

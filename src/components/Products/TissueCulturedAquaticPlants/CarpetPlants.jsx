@@ -155,10 +155,10 @@ const CarpetPlants = () => {
           <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Features</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              ["Custom Design", "Each vertical garden is custom designed to fit your space and aesthetic preferences."],
-              ["Integrated Irrigation", "Built-in irrigation systems ensure plants receive optimal water with minimal maintenance."],
-              ["Plant Selection", "Carefully selected plants that thrive in vertical environments and complement each other."],
-              ["Maintenance Support", "Professional maintenance services available to ensure your vertical garden thrives year-round."]
+              ["Compact Coverage", "Low-growing plants that create a lush, green carpet across your aquarium floor."],
+              ["Easy Maintenance", "Designed for simple trimming and upkeep, ensuring a neat aquascape."],
+               ["Aquascape Enhancement", "Adds depth and dimension to the overall aquarium design."],
+              ["Healthy Growth", "Thrives under proper lighting and CO₂, ensuring vibrant greenery year-round."]
             ].map(([title, desc], i) => (
               <div key={i} className="flex items-start gap-4">
                 <div className="bg-[#2E442F] text-white p-3 rounded-full">

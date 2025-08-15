@@ -159,10 +159,10 @@ const StemPlants = () => {
           <h2 className="text-3xl font-bold text-[#2E442F] mb-6">Features</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              ["Custom Design", "Each vertical garden is custom designed to fit your space and aesthetic preferences."],
-              ["Integrated Irrigation", "Built-in irrigation systems ensure plants receive optimal water with minimal maintenance."],
-              ["Plant Selection", "Carefully selected plants that thrive in vertical environments and complement each other."],
-              ["Maintenance Support", "Professional maintenance services available to ensure your vertical garden thrives year-round."]
+            ["Vibrant Colors", "Adds striking reds, greens, and pinks to enhance visual appeal."],
+            ["Fast Growth", "Grows quickly to fill background spaces and provide shelter for fish."],
+            ["Shape Variety", "Offers diverse leaf patterns for creative aquascaping designs."],
+            ["Dynamic Layouts", "Easily trimmed and replanted to change the aquascape as desired."]
             ].map(([title, desc], i) => (
               <div key={i} className="flex items-start gap-4">
                 <div className="bg-[#2E442F] text-white p-3 rounded-full">
