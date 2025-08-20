@@ -47,7 +47,7 @@ import StemPlants from './components/Products/TissueCulturedAquaticPlants/StemPl
 
 function App() {
   return (
-    <Router>
+  <Router basename="/">
       <Navbar />
       <Routes>
         <Route path='/' element={
