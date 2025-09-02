@@ -20,7 +20,7 @@ const imagesDataByCategory = {
 
       title: "Aglaonema",
 
-      description: "Beautiful Aglonema with variegated leaves, perfect for indoor spaces.",
+      description: "Beautiful Aglaonema with variegated leaves, perfect for indoor spaces.",
     },
   ],
   Alocasia: [
@@ -459,7 +459,7 @@ const benefitsByCategory = {
 
   "Aglaonema": [
 
-  
+
     {
       title: "Low Maintenance",
       description: "Aglaonema plants require minimal care and thrive indoors.",
