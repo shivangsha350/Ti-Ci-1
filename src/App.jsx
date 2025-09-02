@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import ServiceSection from './components/ServiceSection'
+// import ServiceSection from './components/ServiceSection'
 import Footer from './components/Footer'
 import Projects from './components/Projects/Projects'
 import ContactSection from './components/Contact/ContactSection'
@@ -58,7 +58,7 @@ function App() {
             <ProductSection/>
             <TrainingSection/>
             <ScrollingSection/>
-            <ServiceSection />
+            {/* <ServiceSection /> */}
             <Crafting/>
             {/* <CommitmentSection/> */}
             
