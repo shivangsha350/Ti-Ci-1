@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -8,7 +7,7 @@ const cardData = [
     name: "Garden Beauty",
     location: "Kanpur, Uttar Pradesh",
     image:
-      "https://media.istockphoto.com/id/1414023501/photo/beautiful-ornamental-garden.jpg?b=1&s=612x612&w=0&k=20&c=o-6cTBDYGcWdQdAysGNUA14pJJKJjHCUTg8FY6fFK70=",
+      "/public/Vertical garden/Kanpur.jpg",
     description:
       "A beautiful garden is more than a space—it's a living, breathing part of your home. But maintaining that beauty takes time and expertise.",
   },
@@ -16,7 +15,7 @@ const cardData = [
     id: 2,
     name: "Garden Beauty",
     location: "Barbil, Orissa",
-    image: "https://images.pexels.com/photos/955656/pexels-photo-955656.jpeg",
+    image: "/public/vertical-garden.jpg",
     description:
       "Discover serenity with elegant landscaping that connects nature and architecture seamlessly.",
   },
