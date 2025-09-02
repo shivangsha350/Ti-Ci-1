@@ -72,7 +72,7 @@ const ContactSection = () => {
                                     </div>
                                     <div>
                                         <p className="font-semibold flex items-center gap-2">
-                                            <span>📧</span>ticinaturelab@gmail.com
+                                            <span>📧</span>info@ticinaturelab.com
                                         </p>
                                     </div>
                                 </div>

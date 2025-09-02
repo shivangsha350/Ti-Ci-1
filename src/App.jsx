@@ -63,7 +63,7 @@ function App() {
             {/* <CommitmentSection/> */}
             
             {/* <AboutUsSection /> */}
-            <TestimonialsSection/>
+            {/* <TestimonialsSection/> */}
             <LatestWorks />
 
           </>
