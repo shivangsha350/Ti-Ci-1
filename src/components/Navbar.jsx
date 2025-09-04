@@ -38,13 +38,35 @@ const Navbar = () => {
               <span>📍 100 S Main St, NY</span>
               <span>📧 contact@tici.com</span>
             </div> */}
-            <div className=" flex space-x-4">
-              {[<FaFacebookF size={25} />,<FaWhatsapp size={25}/>, <FaInstagram size={25} />].map((Icon, idx) => (
-                <span key={idx} className="hover:text-[#E87722] cursor-pointer transition-colors">
-                  {Icon}
-                </span>
-              ))}
-            </div>
+           
+
+           <div className="flex space-x-4">
+  {[
+    {
+      icon: <FaFacebookF size={25} />,
+      link: "https://www.facebook.com/profile.php?id=100076247762801",
+    },
+    {
+      icon: <FaWhatsapp size={25} />,
+      link: "#", // replace with your WhatsApp number
+    },
+    {
+      icon: <FaInstagram size={25} />,
+      link: "#", // replace with your IG
+    },
+  ].map((item, idx) => (
+    <a
+      key={idx}
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-[#E87722] cursor-pointer transition-colors"
+    >
+      {item.icon}
+    </a>
+  ))}
+</div>
+
           </div>
         </div>
 
