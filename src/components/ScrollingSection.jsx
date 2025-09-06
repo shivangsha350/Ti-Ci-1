@@ -1,46 +1,62 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const images = [
+  "/logo_TICI.jpg",
+  "/logo2_TICI.jpg",
+  "/logo_TICI.jpg",
+  "/logo2_TICI.jpg",
+];
+
+
+const scrollingImages = [...images, ...images];
 
 const ScrollingSection = () => {
   return (
-    <div className="w-full overflow-hidden relative">
-      {/* First row - dark green background */}
-      <div className="bg-[#3b5d3d] text-white py-2 sm:py-3 md:py-4">
-        <div className="flex whitespace-nowrap animate-scrollLeft">
-          {[...Array(2)].map((_, index) => (
-            <React.Fragment key={`left-${index}`}>
-              <span className="mx-4 sm:mx-6 md:mx-8 text-lg sm:text-xl md:text-2xl">
-                01. GARDEN DESIGN
-              </span>
-              <span className="mx-4 sm:mx-6 md:mx-8 text-lg sm:text-xl md:text-2xl">
-                02. GARDEN MAINTENANCE
-              </span>
-              <span className="mx-4 sm:mx-6 md:mx-8 text-lg sm:text-xl md:text-2xl">
-                03. DECKING AND FENCING
-              </span>
-            </React.Fragment>
-          ))}
-        </div>
-      </div>
+    <section
+      className="w-full py-16 px-6 bg-[#EEF3EC] bg-center bg-cover overflow-hidden"
+      style={{
+        backgroundImage: "url('/pattern-bg.png')",
+      }}
+    >
+    
 
-      {/* Second row - lighter green background */}
-      <div className="bg-[#2c4430] text-white py-2 sm:py-3 md:py-4">
-        <div className="flex whitespace-nowrap animate-scrollRight">
-          {[...Array(2)].map((_, index) => (
-            <React.Fragment key={`right-${index}`}>
-              <span className="mx-4 sm:mx-6 md:mx-8 text-lg sm:text-xl md:text-2xl">
-                01. GARDEN DESIGN
-              </span>
-              <span className="mx-4 sm:mx-6 md:mx-8 text-lg sm:text-xl md:text-2xl">
-                02. GARDEN MAINTENANCE
-              </span>
-              <span className="mx-4 sm:mx-6 md:mx-8 text-lg sm:text-xl md:text-2xl">
-                03. DECKING AND FENCING
-              </span>
-            </React.Fragment>
-          ))}
-        </div>
-      </div>
-    </div>
+      {/* Scrolling Images Row */}
+      <motion.div
+        className="flex w-max space-x-6"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{
+          repeat: Infinity,
+          duration: 15, // adjust speed here
+          ease: "linear",
+        }}
+      >
+        {scrollingImages.map((src, index) => (
+          // <div
+          //   key={index}
+          //   className="overflow-hidden rounded-2xl shadow-md shrink-0 w-[300px] h-[200px]"
+          // >
+          //   <img
+          //     src={src}
+          //     alt={`Gallery ${index + 1}`}
+          //     className="w-full h-full object-cover"
+          //   />
+          // </div>
+
+
+<div
+  key={index}
+  
+>
+  <img
+    src={src}
+    alt={`Gallery ${index + 1}`}
+    className="h-50 w-full object-cover overflow-hidden rounded-2xl shadow-md shrink-0"
+  />
+</div>
+        ))}
+      </motion.div>
+    </section>
   );
 };
 

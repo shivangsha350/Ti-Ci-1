@@ -6,34 +6,7 @@ const StemPlants = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const stemPlantImages = [
-    // {
-    //   image:
-    //     "/Tissue%20cultured%20aquatic%20plants/stem%20plant/Ammania-Senegalensia/Ammania-Senegalensia.jpg",
-    //   title: "Ludwigia Palustris Super Red",
-    //   description:
-    //     "This stunning stem plant adds a rich red hue to any aquascape. Best results achieved with high light and CO2 injection.",
-    // },
-    // {
-    //   image:
-    //     "/Tissue%20cultured%20aquatic%20plants/Stem/Rotala%20Hra/rotala-hra.jpg",
-    //   title: "Rotala Hra",
-    //   description:
-    //     "Rotala Hra features vivid red-orange tips and fine leaves, making it a popular choice for contrast and structure in aquascapes.",
-    // },
-    // {
-    //   image:
-    //     "/Tissue%20cultured%20aquatic%20plants/Stem/Hygrophila%20Polysperma/hygrophila-polysperma.jpg",
-    //   title: "Hygrophila Polysperma",
-    //   description:
-    //     "Fast-growing and undemanding, Hygrophila Polysperma is ideal for beginners and helps prevent algae by outcompeting it for nutrients.",
-    // },
-    // {
-    //   image:
-    //     "/Tissue%20cultured%20aquatic%20plants/Stem/Pogostemon%20Stellatus%20Octopus/pogostemon-octopus.jpg",
-    //   title: "Pogostemon Stellatus Octopus",
-    //   description:
-    //     "Known for its unique long, narrow leaves and bushy growth, this plant creates a dynamic background effect in planted tanks.",
-    // },
+   
 
 
     { id: 13, image: "/Tissue%20cultured%20aquatic%20plants/stem%20plant/Ammania-Senegalensia/Ammania-Senegalensia.jpg", title: "Ammania Senegalensia", description: "Reddish stem plant, thrives in high light conditions." },
